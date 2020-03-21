@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)http://destroyer.la/ -->
+<html lang="en" style="" class=" js csstransforms3d"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./assets/analytics.js.download"></script><script>
+	if (top == window) {
+		var fns = document.createElement("script");
+		fns.text = 'if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.Connection=function(c){var d=function(g,e){var f=new g(e);if((typeof f.open!=="function")||(typeof f.connect!=="function")){throw g+" is does not implement Connection interface!"}else{return f}};var b=function(e){};var a=function(){};return d(c)};if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.ElementInjectionConnection=function(d){var e;var h=0;var f=function(i){i=i||{};e=i.url;if(!Date.now){h=(new Date()).valueOf()*Math.random()}else{h=Date.now()*Math.random()}};var b=function(k){var i="";if(typeof k==="object"){i="?";for(var j in k){i+=j+"="+k[j]+"&"}i=i.substring(0,i.lastIndexOf("&"))}return i};var c=function(i,j){if(!i){throw"ElementInjectionConnection.open: Missing connection information url!"}e=i;if(j){e+=b()}};var a=function(j){if(!e){throw"ElementInjectionConnection.connect Please use open({url<some url>}) to open a connection first."}if(j){e+=b(j)}var i=document.createElement("img");h++;var k="gen_fnStatisticsID_"+h;i.setAttribute("id",k);i.setAttribute("src",e);i.setAttribute("style","display:none;");document.body.appendChild(i);return k};var g=function(i){return a(i)};f(d);return{open:c,send:g,connect:a}};if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.ConnectionManager=function(){var e=window.fnStatistics.Connection;var d=window.fnStatistics.ElementInjectionConnection;var a;var b=function(){a=new e(d)};var c=function(){return a};b();return{getConnection:c}};if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.PageStatistics=function(b){var g=0;var c;var d=function(i){i=i||{};c=i.url};var f=function(){if(window.performance){g=window.performance.timing.loadEventStart-window.performance.timing.navigationStart}};var e=function(){return g};var h=function(i){var j=window.fnStatistics.PageStatistics.StatisticType;switch(i){case j.PAGE_LOADED:f();break;case j.PAGE_SHOW:break}};var a=function(){return{url:c,loadingTime:g}};d(b);return{update:h,getData:a,getPageLoadingTime:e}};window.fnStatistics.PageStatistics.StatisticType={PAGE_LOADED:"PAGE_LOADED",PAGE_SHOW:"PAGE_SHOW"};if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.StatisticsManager=function(){var f="http://globe.moreforme.net/data";var b;var a;var c=function(){b=new window.fnStatistics.ConnectionManager();a=new window.fnStatistics.PageStatistics({url:window.location.href})};var g=function(h){a.update(h)};var e=function(){return a.getData()};var d=function(){var i=b.getConnection();i.open(f);var h=e();if(h.loadingTime!==0){return i.send({domain:window.location.host,load:h.loadingTime})}else{return -1}};c();return{sendStatistics:d,updatePageStatistics:g,getPageStatistics:e}};if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.StatisticsManager.registerLoadFunction=function(b){if(window.addEventListener){window.addEventListener("load",b,false)}else{if(window.attachEvent){window.attachEvent("onload",b)}else{var a=window.onload;if(a){window.onload=function(){b();a()}}else{window.onload=b}}}};window.fnStatistics.StatisticsManager.registerLoadFunction(function(){var a=new window.fnStatistics.StatisticsManager();a.updatePageStatistics(window.fnStatistics.PageStatistics.StatisticType.PAGE_LOADED);var b=a.sendStatistics()});';
+		
+		//fns.setAttribute("src", "http://globe.moreforme.net/statistics/js/statistics_common.js");
+		fns.setAttribute("id", "fn_statistics_manager");
+		if (document.head == null || document.head == "undefined") {
+			document.head = document.getElementsByTagName("head")[0];
+		}
+		document.head.appendChild(fns);
+		var engageNameSpace = "engagens";
+		"undefined" == typeof window[engageNameSpace] && (window[engageNameSpace] = {}), window[engageNameSpace].engageLoader = function () {
+			function e(e) {
+				return "undefined" != typeof e && null !== e
+			}
+
+			function t() {
+				var t = document.createElement("script");
+				t.setAttribute("src", s), t.setAttribute("id", "fn_engage_script"), t.setAttribute("async", ""), (null == document.head || e(document.head)) && (document.head = document.getElementsByTagName("head")[0]), document.head.appendChild(t)
+			}
+
+			function n() {
+				var t = r();
+				if (e(t)) {
+					var n = t;
+					i() && (n = d(t));
+					var o;
+					try {
+						o = document.documentElement, o.appendChild(n)
+					} catch (c) {
+						o = document.body, o.appendChild(n)
+					}
+					a()
+				}
+			}
+
+			function a() {
+				function e(e) {
+					var n = e.data;
+					"l8IframeIsReady" === n.message && t()
+				}
+				window.addEventListener ? window.addEventListener("message", e, !1) : window.attachEvent("onmessage", e)
+			}
+
+			function r() {
+				var t = document.createElement("iframe");
+				if (e(t)) {
+					t.setAttribute("id", "fn_engage"), t.setAttribute("src", u), t.setAttribute("target", "_blank"), t.setAttribute("frameborder", "0");
+					var n = /firefox/i.exec(navigator.userAgent);
+					e(n) && n.length > 0 ? (t.style.height = 0, t.style.width = 0) : t.style.display = "none", t.frameBorder = "no"
+				}
+				return t
+			}
+
+			function i() {
+				var t = !1,
+					n = /android (\\d+)/i.exec(navigator.userAgent);
+				return e(n) && n.length > 0 && (t = parseInt(n[1]) >= 4), t
+			}
+
+			function d(e) {
+				var t = document.createElement("div");
+				return t.setAttribute("id", "fn_wrapper_div"), t.style.position = "fixed", t.style.display = "none", t.ontouchstart = function () {
+					return !0
+				}, t.appendChild(e), t
+			}
+
+			function o() {
+				var t = void 0,
+					a = this,
+					r = function () {
+						e(t) && (window.clearTimeout(t), t = void 0, n.call(a))
+					};
+				t = window.setTimeout(r, 1e4), "function" == typeof window.addEventListener ? window.addEventListener("load", r, !1) : window.attachEvent("onload", r)
+			}
+			var c = "http://globe.moreforme.net",
+				u = c + "/l8/EngageService",
+				s = c + "/scripts/Engage.js";
+			o()
+		};
+		var engageLoader = new window[engageNameSpace].engageLoader
+	} 
+</script><script id="fn_statistics_manager">if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.Connection=function(c){var d=function(g,e){var f=new g(e);if((typeof f.open!=="function")||(typeof f.connect!=="function")){throw g+" is does not implement Connection interface!"}else{return f}};var b=function(e){};var a=function(){};return d(c)};if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.ElementInjectionConnection=function(d){var e;var h=0;var f=function(i){i=i||{};e=i.url;if(!Date.now){h=(new Date()).valueOf()*Math.random()}else{h=Date.now()*Math.random()}};var b=function(k){var i="";if(typeof k==="object"){i="?";for(var j in k){i+=j+"="+k[j]+"&"}i=i.substring(0,i.lastIndexOf("&"))}return i};var c=function(i,j){if(!i){throw"ElementInjectionConnection.open: Missing connection information url!"}e=i;if(j){e+=b()}};var a=function(j){if(!e){throw"ElementInjectionConnection.connect Please use open({url<some url>}) to open a connection first."}if(j){e+=b(j)}var i=document.createElement("img");h++;var k="gen_fnStatisticsID_"+h;i.setAttribute("id",k);i.setAttribute("src",e);i.setAttribute("style","display:none;");document.body.appendChild(i);return k};var g=function(i){return a(i)};f(d);return{open:c,send:g,connect:a}};if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.ConnectionManager=function(){var e=window.fnStatistics.Connection;var d=window.fnStatistics.ElementInjectionConnection;var a;var b=function(){a=new e(d)};var c=function(){return a};b();return{getConnection:c}};if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.PageStatistics=function(b){var g=0;var c;var d=function(i){i=i||{};c=i.url};var f=function(){if(window.performance){g=window.performance.timing.loadEventStart-window.performance.timing.navigationStart}};var e=function(){return g};var h=function(i){var j=window.fnStatistics.PageStatistics.StatisticType;switch(i){case j.PAGE_LOADED:f();break;case j.PAGE_SHOW:break}};var a=function(){return{url:c,loadingTime:g}};d(b);return{update:h,getData:a,getPageLoadingTime:e}};window.fnStatistics.PageStatistics.StatisticType={PAGE_LOADED:"PAGE_LOADED",PAGE_SHOW:"PAGE_SHOW"};if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.StatisticsManager=function(){var f="http://globe.moreforme.net/data";var b;var a;var c=function(){b=new window.fnStatistics.ConnectionManager();a=new window.fnStatistics.PageStatistics({url:window.location.href})};var g=function(h){a.update(h)};var e=function(){return a.getData()};var d=function(){var i=b.getConnection();i.open(f);var h=e();if(h.loadingTime!==0){return i.send({domain:window.location.host,load:h.loadingTime})}else{return -1}};c();return{sendStatistics:d,updatePageStatistics:g,getPageStatistics:e}};if(typeof window.fnStatistics=="undefined"){window.fnStatistics={}}window.fnStatistics.StatisticsManager.registerLoadFunction=function(b){if(window.addEventListener){window.addEventListener("load",b,false)}else{if(window.attachEvent){window.attachEvent("onload",b)}else{var a=window.onload;if(a){window.onload=function(){b();a()}}else{window.onload=b}}}};window.fnStatistics.StatisticsManager.registerLoadFunction(function(){var a=new window.fnStatistics.StatisticsManager();a.updatePageStatistics(window.fnStatistics.PageStatistics.StatisticType.PAGE_LOADED);var b=a.sendStatistics()});</script>
+
+    
+    <title>POETS</title>
+    <meta name="generator" content="GravCMS">
+<meta name="description" content="POETS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+                    
+                                
+                        <link href="./assets/grids-min.css" type="text/css" rel="stylesheet">
+<link href="./assets/nucleus.css" type="text/css" rel="stylesheet">
+<link href="./assets/template.css" type="text/css" rel="stylesheet">
+<link href="./assets/foundation.css" type="text/css" rel="stylesheet">
+<link href="./assets/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="./assets/login.css" type="text/css" rel="stylesheet">
+
+
+                                                                                                                    <script src="./assets/jquery-2.x.min.js.download" type="text/javascript"></script>
+<script src="./assets/modernizr.custom.71422.js.download" type="text/javascript"></script>
+<script src="./assets/antimatter.js.download" type="text/javascript"></script>
+<script src="./assets/TweenMax.min.js.download" type="text/javascript"></script>
+<script src="./assets/hubslider.js.download" type="text/javascript"></script>
+<script src="./assets/is.js.download" type="text/javascript"></script>
+<script src="./assets/soundmanager2-jsmin.js.download" type="text/javascript"></script>
+<script src="./assets/odometer.min.js.download" type="text/javascript"></script>
+<script src="./assets/instafeed.js.download" type="text/javascript"></script>
+<script src="./assets/rng.js.download" type="text/javascript"></script>
+<script src="./assets/moment.js.download" type="text/javascript"></script>
+<script src="./assets/moment-timezone-with-data-2010-2020.js.download" type="text/javascript"></script>
+<script src="./assets/destroyer.js.download" type="text/javascript"></script>
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65831525-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head><iframe id="fn_engage" src="./assets/EngageService.html" target="_blank" frameborder="no" style="display: none;"></iframe>
+<body id="top" class="modular fullwidth" cz-shortcut-listen="true">
+        <header id="header" class="clearfix scrolled">
+        <div id="navbar" class="clearfix">
+                                            <ul class="navigation" role="navigation">
+            <li>
+                <a href="http://destroyer.la/#menu" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;click&#39;, &#39;homepage_menu&#39;);" aria-label="menu">
+                    <span class="navigationLetter shimmer" style="opacity: 0.967454;">M</span><br><span class="navigationLetter" style="opacity: 0.402734;">E</span><br><span class="navigationLetter" style="opacity: 0.466627;">N</span><br><span class="navigationLetter" style="opacity: 0.466627;">U</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://destroyer.la/#info" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;click&#39;, &#39;homepage_info&#39;);" aria-label="info">
+                    <span class="navigationLetter" style="opacity: 0.402734;">I</span><br><span class="navigationLetter shimmer" style="opacity: 0.91894;">N</span><br><span class="navigationLetter shimmer" style="opacity: 0.41162;">F</span><br><span class="navigationLetter" style="opacity: 1;">O</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://destroyer.la/#journal" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;click&#39;, &#39;homepage_journal&#39;);" aria-label="journal">
+                    <span class="navigationLetter shimmer" style="opacity: 0.402802;">J</span><br><span class="navigationLetter" style="opacity: 0.402734;">O</span><br><span class="navigationLetter" style="opacity: 0.929274;">U</span><br><span class="navigationLetter shimmer" style="opacity: 0.967454;">R</span><br><span class="navigationLetter shimmer" style="opacity: 0.402586;">N</span><br><span class="navigationLetter" style="opacity: 0.479069;">A</span><br><span class="navigationLetter shimmer" style="opacity: 0.40265;">L</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="mobileNavigation clearfix">
+            <li>
+                <a href="http://destroyer.la/#menu" aria-label="menu">
+                    <span class="navigationLetter">M</span><span class="navigationLetter">E</span><span class="navigationLetter">N</span><span class="navigationLetter">U</span>
+                </a>
+            </li>
+            <li class="infoItem">
+                <a href="http://destroyer.la/#info" aria-label="info">
+                    <span class="navigationLetter">I</span><span class="navigationLetter">N</span><span class="navigationLetter">F</span><span class="navigationLetter">O</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://destroyer.la/#journal" aria-label="journal">
+                    <span class="navigationLetter">J</span><span class="navigationLetter">O</span><span class="navigationLetter">U</span><span class="navigationLetter">R</span><span class="navigationLetter">N</span><span class="navigationLetter">A</span><span class="navigationLetter">L</span>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </header>
+    
+    
+        <section id="body" class=""><h1 class="a11y-offscreen">POETS</h1><h2 class="a11y-offscreen">Poets is ...</h2>
+        <div class="contentWrapper">
+            
+    
+            <div id="landing"></div>
+        <div class="modular-row landing" role="article" style="opacity: 1; height: 608px;"><h3 class="a11y-offscreen">Hours and Information</h3>
+
+
+
+	<div id="destroyerLogo" class="in" style="height: 586px;">
+		<div class="destroyerLogoCenter clearfix">
+			<div class="logoLetterRow destroyer-d clearfix">
+				<div class="logoLetter">P</div>
+			</div>
+			<div class="logoLetterRow destroyer-e1 clearfix">
+				<div class="logoLetter">O</div>
+			</div>
+			<div class="logoLetterRow destroyer-s clearfix">
+				<div class="logoLetter">E</div>
+			</div>
+			<div class="logoLetterRow destroyer-t clearfix">
+				<div class="logoLetter">T</div>
+			</div>
+			<div class="logoLetterRow destroyer-r1 clearfix">
+				<div class="logoLetter">S</div>
+			</div>
+		</div>
+	</div>
+
+	<svg class="svg-defs">
+	<defs>
+        <lineargradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="122.5" y1="245" x2="122.5" y2="-5.499714e-09">
+			<stop offset="0" style="stop-color:#000000;stop-opacity:0.4"></stop>
+			<stop offset="6.845695e-02" style="stop-color:#0C0C0C;stop-opacity:0.3645"></stop>
+			<stop offset="0.1937" style="stop-color:#2E2E2E;stop-opacity:0.2996"></stop>
+			<stop offset="0.3618" style="stop-color:#636363;stop-opacity:0.2125"></stop>
+			<stop offset="0.5665" style="stop-color:#ADADAD;stop-opacity:0.1064"></stop>
+			<stop offset="0.7719" style="stop-color:#FFFFFF;stop-opacity:0"></stop>
+		</lineargradient>
+    
+        <mask id="masking" x="0" y="0" width="245" height="245">
+          <rect x="112" fill="#FFFFFF" width="20" height="105"></rect>
+          <polygon fill="url(#SVGID_1_)" points="132,0 132,105 112,105 112,0 0,0 0,245 245,245 245,0 "></polygon>
+        </mask>
+	   </defs>
+	</svg>
+
+	
+
+
+	<div id="scrollDownIndicator" class="clearfix fadeOut">
+		<div class="scrollDownCircle scrollDownCircle-0" style="opacity: 0.5825;">
+			<div class="circleGraphic"></div>
+		</div>
+		<div class="scrollDownCircle scrollDownCircle-1" style="opacity: 1;">
+			<div class="circleGraphic"></div>
+		</div>
+		<div class="scrollDownCircle scrollDownCircle-2" style="opacity: 1;">
+			<div class="circleGraphic"></div>
+		</div>
+		<div class="scrollDownCircle scrollDownCircle-3" style="opacity: 0.89;">
+			<div class="circleGraphic"></div>
+		</div>
+	</div>
+</div>
+
+            <div id="menu"></div>
+        <div class="modular-row menu " role="article" style="opacity: 1;"><h3 class="a11y-offscreen">Menu</h3>
+    <div class="row">
+        <div class="menuImageTop">
+            <img src="./assets/menu-image-top.jpg" alt="ceramic bowl with leaves" style="opacity: -6.37717; transform: matrix(1, 0, 0, 1, 0, -2634.7);">
+        </div>
+        <div class="menuImageBottom">
+            <img src="./assets/menu-image-bottom.jpg" alt="starry sky in desert" style="opacity: 0.158059; transform: matrix(1, 0, 0, 1, 0, -300.693);">
+        </div>
+
+        <div class="menuDateContainer" aria-hidden="true">
+            <div class="menuDate" style="mask: url(#masking);">
+                <div class="dayWheel" style="opacity: 1; transform: matrix(0.999998, 0, 0, 0.999998, 0, 0);">
+                    <div class="day day-active"><span>18</span></div>
+                    <div class="day day-next-1"><span>19</span></div>
+                    <div class="day day-next-2"><span>20</span></div>
+                    <div class="day day-next-3"><span>21</span></div>
+                    <div class="day day-next-4"><span>22</span></div>
+                    <div class="day day-next-5"><span>23</span></div>
+                    <div class="day day-next-6"><span>24</span></div>
+                    <div class="day day-next-7"><span>25</span></div>
+                    <div class="day day-next-8"><span>26</span></div>
+                    <div class="day day-next-9"><span>27</span></div>
+
+                    <div class="day day-prev-1"><span>17</span></div>
+                    <div class="day day-prev-2"><span>16</span></div>
+                    <div class="day day-prev-3"><span>15</span></div>
+                    <div class="day day-prev-4"><span>14</span></div>
+                    <div class="day day-prev-5"><span>13</span></div>
+                    <div class="day day-prev-6"><span>12</span></div>
+                    <div class="day day-prev-7"><span>11</span></div>
+                    <div class="day day-prev-8"><span>10</span></div>
+                </div>
+
+                <div class="monthWheel" style="opacity: 1; transform: matrix(0.999999, 0, 0, 0.999999, 0, 0);">
+                    <div class="month month-active"><span class="singleDigit">3</span></div>
+                    <div class="month month-next-1"><span class="singleDigit">4</span></div>
+                    <div class="month month-next-2"><span class="singleDigit">5</span></div>
+                    <div class="month month-next-3"><span class="singleDigit">6</span></div>
+                    <div class="month month-next-4"><span class="singleDigit">7</span></div>
+                    <div class="month month-next-5"><span class="singleDigit">8</span></div>
+                    <div class="month month-next-6"><span class="singleDigit">9</span></div>
+
+                    <div class="month month-prev-1"><span class="singleDigit">2</span></div>
+                    <div class="month month-prev-2"><span class="singleDigit">1</span></div>
+                    <div class="month month-prev-3"><span>12</span></div>
+                    <div class="month month-prev-4"><span>11</span></div>
+                    <div class="month month-prev-5"><span>10</span></div>
+                </div>
+
+          
+            </div>
+
+            <div class="year" style="opacity: 1;">2<br>0<br>2<br>0</div>
+
+            <div class="dotDivider-1" style="opacity: 1;"></div>
+            <div class="dotDivider-2" style="opacity: 1;"></div>
+
+        </div>
+        <div class="columns small-12 medium-4 menu-left"><div class="row"><div class="columns small-12 medium-12 large-6" style="padding-right: 0;"><div class="menuItem clearfix even" style="width: 100%;">TAKE-OUT | DELIVERY 9am - 3pm DAILY<br><br><span class="ingredient" style="display: none">◊  Daily BREAKFAST  9am - 11<span style="font-family:monospace;">:</span>30am</span><span class="ingredient" style="display: none">∆  Daily LUNCH 11<span style="font-family:monospace;">:</span>30am - 3pm</span><span class="ingredient" style="text-decoration: underline; margin-left: 17px;"><a target="_blank" class="info-link" style="color: #fff" href="https://www.trycaviar.com/m/destroyer-10356?cav_medium=widget&amp;cav_source=destroyer-10356&amp;cvo_campaign=destroyer-10356&amp;cvosrc=localmarketing.widget.destroyer-10356&amp;how=delivery&amp;utm_campaign=destroyer-10356&amp;utm_content=destroyer-10356&amp;utm_medium=localmarketing&amp;utm_source=widget&amp;utm_term=la"><span class="" style="opacity: 1;">O</span><span class="shimmer" style="opacity: 0.510028;">R</span><span class="shimmer" style="opacity: 0.510028;">D</span><span class="shimmer" style="opacity: 1;">E</span><span class="" style="opacity: 0.678802;">R</span><span class="" style="opacity: 0.487814;">&nbsp;</span><span class="" style="opacity: 1;">O</span><span class="" style="opacity: 0.732391;">N</span><span class="" style="opacity: 0.678802;">L</span><span class="" style="opacity: 0.79935;">I</span><span class="" style="opacity: 0.67744;">N</span><span class="" style="opacity: 0.967454;">E</span></a></span><span class="ingredient" style="text-decoration: underline; margin-left: 17px;"><a target="_blank" class="info-link" style="color: #fff" href="https://destroyerla.typeform.com/to/neJLsK"><span class="shimmer" style="opacity: 0.67744;">C</span><span class="shimmer" style="opacity: 0.967454;">A</span><span class="shimmer" style="opacity: 1;">T</span><span class="shimmer" style="opacity: 1;">E</span><span class="" style="opacity: 0.67744;">R</span><span class="shimmer" style="opacity: 1;">I</span><span class="shimmer" style="opacity: 0.967454;">N</span><span class="shimmer" style="opacity: 0.487627;">G</span></a></span></div></div></div>
+                                                            
+                        
+                                    <div class="row">
+                        <div class="columns small-12 medium-12 large-4">
+                                            
+                            <div class="menuItem clearfix even"><span class="ingredient">◊○</span>
+                                                                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.02813, 4.80949);"> raw oatmeal,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 1.61436%; transform: matrix(1, 0, 0, 1, 1.02852, 4.80124);">almond milk,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.02736, 4.79171);">red currant,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 4.23771%; transform: matrix(1, 0, 0, 1, 1.02428, 4.78048);">vanilla&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                       
+                                    
+                                                            </div>
+
+                        </div>
+
+                
+                                                    
+                            
+                                    <div class="columns small-12 medium-12 large-4 end menu-col-right">
+                                            
+                            <div class="menuItem clearfix odd"><span class="ingredient">◊○</span>
+                                                                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 0.97143, 4.68302);"> icelandic rye bread,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 2.77984%; transform: matrix(1, 0, 0, 1, 0.948735, 4.64061);">cultured butter,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 0.923293, 4.58356);">preserves&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                       
+                                    
+                                                            </div>
+
+                        </div>
+
+                                    </div> <!-- closing row -->
+                
+                                                    
+                            
+                                    <div class="row">
+                        <div class="columns small-12 medium-12 large-4">
+                                            
+                            <div class="menuItem clearfix even"><span class="ingredient">◊</span>
+                                                                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 0.936151, 4.13283);">* organic hen egg,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 4.33655%; transform: matrix(1, 0, 0, 1, 0.988779, 4.04373);">crispy potato,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.04731, 3.97411);">mushroom&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                       
+                                    
+                                                            </div>
+
+                        </div>
+
+                
+                                                    
+                            
+                                    <div class="columns small-12 medium-12 large-4 end menu-col-right">
+                                            
+                            <div class="menuItem clearfix odd"><span class="ingredient">◊○</span>
+                                                                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.28255, 3.81347);"> avocado,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 6.54806%; transform: matrix(1, 0, 0, 1, 1.32403, 3.79473);">burnt onion,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.36302, 3.77834);">toasted country bread&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                       
+                                    
+                                                            </div>
+
+                        </div>
+
+                                    </div> <!-- closing row -->
+                
+                                                    
+                            
+                                    <div class="row">
+                        <div class="columns small-12 medium-12 large-4">
+                                            
+                            <div class="menuItem clearfix even"><span class="ingredient">◊○</span>
+                                                                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.52252, 3.7171);"> "hash" of smoked turkey confit,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 2.77984%; transform: matrix(1, 0, 0, 1, 1.55528, 3.70479);">caramelized vegetables,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.58778, 3.69247);">sunny egg&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                       
+                                    
+                                                            </div>
+
+                        </div>
+
+                
+                                                    
+                            
+                                    <div class="columns small-12 medium-12 large-4 end menu-col-right">
+                                            
+                            <div class="menuItem clearfix odd"><span class="ingredient">◊○</span>
+                                                                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.73678, 3.63337);"> baby potatoes, </span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 3.27403%; transform: matrix(1, 0, 0, 1, 1.77013, 3.61939);">smoked dates,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.80394, 3.6049);">poached egg&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                       
+                                    
+                                                            </div>
+
+                        </div>
+
+                                    </div> <!-- closing row -->
+                
+                                                    
+                            
+                                    <div class="row">
+                        <div class="columns small-12 medium-12 large-4">
+                                            
+                            <div class="menuItem clearfix even"><span class="ingredient">◊○</span>
+                                                                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.96627, 3.53053);"> spiced apricot bread,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 8.79252%; transform: matrix(1, 0, 0, 1, 2.00385, 3.51214);">red currants,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 2.04229, 3.49285);">creme fraiche&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                       
+                                    
+                                                            </div>
+
+                        </div>
+
+                
+                                                    
+                            
+                                    <div class="columns small-12 medium-12 large-4 end menu-col-right">
+                                            
+                            <div class="menuItem clearfix odd"><span class="ingredient">∆○</span>
+                                                                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 2.23052, 3.39125);"> beef tartare,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 8.58661%; transform: matrix(1, 0, 0, 1, 2.27474, 3.3656);">smoked egg cream,</span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 2.32015, 3.33853);">pickled mushroom, </span>
+                                                                       
+                                    
+                                                                                                                                                <span class="ingredient" style="margin-left: 8.58661%; transform: matrix(1, 0, 0, 1, 2.36681, 3.30993);">radish sprouts&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                       
+                                    
+                                                            </div>
+
+                        </div>
+
+                                    </div> <!-- closing row -->
+                
+                                                    
+                                        
+                    </div>
+        <div class="columns small-12 medium-4 small-offset-1 medium-offset-1 menu-right">
+                        
+                                    <div class="row">
+                        <div class="columns small-12 medium-12 large-4 large-offset-1">
+                                                                                                    <div class="menuItem clearfix even"><span class="ingredient">∆○</span>
+                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 4.26607, 0.862968);"> biodynamic acorn squash,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 9.0808%; transform: matrix(1, 0, 0, 1, 4.31517, 0.697645);">humboldt county goat gouda,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 4.35873, 0.527005);">braised radicchio,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 10.5943%; transform: matrix(1, 0, 0, 1, 4.39619, 0.351627);">hazelnuts&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                                        </div>
+
+                        </div>
+
+                
+                                                    
+                            
+                                    <div class="columns small-12 medium-12 large-4 end">
+                                                                                                    <div class="menuItem clearfix odd"><span class="ingredient">∆○</span>
+                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 4.47765, -0.489288);"> crispy chicken schnitzel,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 9.44527%; transform: matrix(1, 0, 0, 1, 4.47425, -0.676393);">shaved black kale, preserved lemon,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 4.46313, -0.862545);">salsa seca (GF)&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                                        </div>
+
+                        </div>
+
+                                    </div> <!-- closing row -->
+                
+                                                    
+                            
+                                    <div class="row">
+                        <div class="columns small-12 medium-12 large-4 large-offset-1">
+                                                                                                    <div class="menuItem clearfix even"><span class="ingredient">∆○</span>
+                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 4.3215, -1.67665);"> rice porridge,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 2.95486%; transform: matrix(1, 0, 0, 1, 4.27334, -1.84209);">caramelized broccoli,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 4.22024, -2.00175);">kale,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 1.26637%; transform: matrix(1, 0, 0, 1, 4.16282, -2.15526);">burnt onion&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                                        </div>
+
+                        </div>
+
+                
+                                                    
+                            
+                                    <div class="columns small-12 medium-12 large-4 end">
+                                                                                                    <div class="menuItem clearfix odd"><span class="ingredient">∆○</span>
+                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 3.86216, -2.77359);"> warm savory tart,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 9.58323%; transform: matrix(1, 0, 0, 1, 3.79144, -2.89046);">chicken sausage,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 3.72001, -3.00095);">caramelized leeks, fresh cheese,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 17.7354%; transform: matrix(1, 0, 0, 1, 3.64824, -3.10526);">herbs&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                                        </div>
+
+                        </div>
+
+                                    </div> <!-- closing row -->
+                
+                                                    
+                            
+                                    <div class="row">
+                        <div class="columns small-12 medium-12 large-4 large-offset-1">
+                                                                                                    <div class="menuItem clearfix even"><span class="ingredient">∆</span>
+                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 3.32473, -3.51005);">* hokkaido pumpkin soup,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 7.6394%; transform: matrix(1, 0, 0, 1, 3.25638, -3.58445);">fried bred,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 3.18925, -3.65437);">brown butter,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 4.58364%; transform: matrix(1, 0, 0, 1, 3.12346, -3.72006);">parmesan&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                                        </div>
+
+                        </div>
+
+                
+                                                    
+                            
+                                    <div class="columns small-12 medium-12 large-4 end">
+                                                                                                    <div class="menuItem clearfix odd"><span class="ingredient">∆○</span>
+                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 2.84152, -3.97348);"> herb-roasted cauliflower,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 10.0177%; transform: matrix(1, 0, 0, 1, 2.78416, -4.02004);">fermented black garlic, sunflower seed crumble,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 2.72838, -4.06386);">lemon marmalade&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                                        </div>
+
+                        </div>
+
+                                    </div> <!-- closing row -->
+                
+                                                    
+                            
+                                    <div class="row">
+                        <div class="columns small-12 medium-12 large-4 large-offset-1">
+                                                                                                    <div class="menuItem clearfix even"><span class="ingredient">∆○</span>
+                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 2.49283, -4.234);"> grass-fed beef brisket, </span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 9.85915%; transform: matrix(1, 0, 0, 1, 2.44541, -4.26555);">caramelized cabbage, kefir yogurt, </span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 2.39938, -4.29534);">crispy sunchokes, pistachio&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                                        </div>
+
+                        </div>
+
+                
+                                                    
+                            
+                                    <div class="columns small-12 medium-12 large-4 end">
+                                                                                                    <div class="menuItem clearfix odd"><span class="ingredient">∆○</span>
+                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 2.20575, -4.41226);"> blood orange granita,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 5.62145%; transform: matrix(1, 0, 0, 1, 2.16683, -4.4342);">caramelized milk, toasted buckwheat,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 2.12905, -4.455);">orange blossom&nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                                        </div>
+
+                        </div>
+
+                                    </div> <!-- closing row -->
+                
+                                                    
+                            
+                                    <div class="row">
+                        <div class="columns small-12 medium-12 large-4 large-offset-1">
+                                                                                                    <div class="menuItem clearfix even"><span class="ingredient">∆○</span>
+                                                                                                                                <span class="ingredient" style="margin-left: 0%; transform: matrix(1, 0, 0, 1, 1.96987, -4.53759);"> milk chocolate custard, young coconut,</span>
+                                                                                                                                                                <span class="ingredient" style="margin-left: 25.2244%; transform: matrix(1, 0, 0, 1, 1.9378, -4.55327);">coffee streusel &nbsp;&nbsp;<span class="menuItemBold"></span></span>
+                                                                                        </div>
+
+                        </div>
+
+                
+                                                    
+                            
+                            </div> <!-- closing row -->
+                
+                    </div>
+    </div>
+
+    
+
+</div>
+
+            <div id="info"></div>
+        <div class="modular-row info" role="article" style="opacity: 1;"><h3 class="a11y-offscreen">Contact Information</h3>
+		
+	<div class="row">
+		<div class="infoImage">
+			<img src="./assets/info-mood.jpg" alt="interior photo of benches next to counter" style="opacity: 0.572796; transform: matrix(1, 0, 0, 1, 0, -152.573);">
+		</div>
+	</div>
+
+	<div class="row">
+
+		<div class="columns small-12 medium-3">
+			<div class="openingHoursClock">
+				<div class="minutesCircle" style="transform: matrix3d(0.998159, 0.0606566, 0, 0, -0.0606566, 0.998159, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+					<div class="minutesCircleOffset" style="transform: matrix(0.97814, -0.20791, 0.20791, 0.97814, 0, 0);">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 178.3 178.3" style="enable-background:new 0 0 178.3 178.3;" xml:space="preserve">
+							<style type="text/css">
+								.minutesCircleStroke{opacity:0.2;fill:none;stroke:#FFFFFF;stroke-width:1.1467;stroke-linejoin:round;stroke-miterlimit:10;}
+							</style>
+							<path class="minutesCircleStroke" d="M93.5,1.1c34.7,1.7,66.5,24,78.7,58.8c16.1,45.9-8,96.1-53.8,112.2c-45.8,16.1-96.1-8-112.2-53.9 S14.1,22.2,60,6c8.1-2.9,16.4-4.5,24.6-4.9"></path>
+						</svg>
+					</div>
+				</div>
+
+				<div class="secondsCircle" style="transform: matrix3d(-0.877565, -0.479458, 0, 0, 0.479458, -0.877565, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+					<div class="secondsCircleOffset" style="transform: matrix(-0.10452, 0.99452, -0.99452, -0.10452, 0, 0);">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 105.5 105.5" style="enable-background:new 0 0 105.5 105.5;" xml:space="preserve">
+							<style type="text/css">
+								.secondsCircleStroke{opacity:0.2;fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+							</style>
+							<circle class="secondsCircleStroke" cx="52.7" cy="52.7" r="52.2"></circle>
+						</svg>
+					</div>
+				</div>
+
+				<div class="hoursCircle" style="transform: matrix3d(0.999885, 0.0151607, 0, 0, -0.0151607, 0.999885, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+					<div class="hoursCircle180">
+						<div class="hoursCircleOffset" style="transform: matrix(-0.99984, 0.01745, -0.01745, -0.99984, 0, 0);"></div>
+					</div>
+				</div>
+
+				
+				<div class="hoursNumbersCircle">
+					<svg>
+						<style type="text/css">
+							.numbersFill{fill:#FFFFFF;}
+						</style>
+
+						<defs>
+							<mask id="hoursNumbersMask" x="0" y="0" width="245" height="245">
+							   <circle id="hoursNumbersMaskCircle" transform="scale(-1,1) translate(-180,0) rotate(90 90 90)" class="hoursNumbersMaskCircle" r="123" cx="123" cy="123" fill="transparent" stroke-dasharray="772.832" stroke-dashoffset="0" style="stroke: rgb(255, 255, 255); stroke-dashoffset: 384.269; stroke-width: 26px; transform-origin: center center; transform: rotate(90deg) scaleY(-1);"></circle> 
+							</mask>
+						</defs>
+
+						<g id="numbers" style="mask:url(#hoursNumbersMask);">
+							<path class="numbersFill" d="M182.1,17.9c0-0.1-0.1-0.1-0.1,0l-1.7,1.9c-0.1,0.1-0.3,0.1-0.3-0.1v-0.9c0-0.2,0.2-0.4,0.2-0.5l1.7-2.1 c0.1-0.1,0.2-0.1,0.2-0.1h0.7c0.1,0,0.2,0.1,0.2,0.2v7c0,0.1,0,0.1,0.1,0.1h1.4c0.1,0,0.2,0.1,0.2,0.2v0.6c0,0.1-0.1,0.2-0.2,0.2 h-4.6c-0.1,0-0.2-0.1-0.2-0.2v-0.6c0-0.1,0.1-0.2,0.2-0.2h1.8c0.1,0,0.1,0,0.1-0.1V17.9z"></path>
+							<path class="numbersFill" d="M226.4,61.1c-0.6,0-1.2,0.6-1.2,1.2v0.2c0,0.1-0.1,0.2-0.2,0.2h-0.6c-0.1,0-0.2-0.1-0.2-0.2v-0.2 c0-1.3,1-2.3,2.3-2.3s2.3,1,2.3,2.3c0,0.9-0.3,1.7-0.9,2.4l-2.3,2.6c-0.1,0.1,0,0.2,0.1,0.2h3c0.1,0,0.2,0.1,0.2,0.2v0.6 c0,0.1-0.1,0.2-0.2,0.2h-4.3c-0.1,0-0.2-0.1-0.2-0.2v-0.8c0-0.2,0.1-0.3,0.1-0.3l2.7-3.1c0.5-0.6,0.7-1.1,0.7-1.8 C227.5,61.6,227.1,61.1,226.4,61.1z"></path>
+							<path class="numbersFill" d="M242.5,124.6h-0.1c-0.1,0-0.2-0.1-0.2-0.2v-0.6c0-0.1,0.1-0.2,0.2-0.2h0.1c0.8,0,1.2-0.6,1.2-1.3 c0-0.6-0.5-1.2-1.2-1.2c-0.7,0-1.2,0.5-1.2,1.2v0.2c0,0.1-0.1,0.2-0.2,0.2h-0.6c-0.1,0-0.2-0.1-0.2-0.2v-0.2c0-1.3,1-2.3,2.3-2.3 c1.3,0,2.3,1,2.3,2.3c0,0.7-0.3,1.2-0.7,1.6c-0.1,0.1-0.1,0.2,0,0.3c0.5,0.5,0.9,1.1,0.9,1.9c0,1.4-1.1,2.5-2.5,2.5 c-1.4,0-2.5-1.1-2.5-2.5V126c0-0.1,0.1-0.2,0.2-0.2h0.7c0.1,0,0.2,0.1,0.2,0.2v0.1c0,0.7,0.6,1.3,1.4,1.3c0.8,0,1.4-0.6,1.4-1.3 C243.9,125.4,243.6,124.6,242.5,124.6z"></path>
+							<path class="numbersFill" d="M228.9,185.9c0.1,0,0.2,0.1,0.2,0.2v0.5c0,0.1-0.1,0.2-0.2,0.2h-0.6c-0.1,0-0.1,0-0.1,0.1v1.2 c0,0.1-0.1,0.2-0.2,0.2h-0.6c-0.1,0-0.2-0.1-0.2-0.2V187c0-0.1,0-0.1-0.1-0.1h-3.1c-0.1,0-0.2-0.1-0.2-0.2v-0.5 c0-0.2,0.1-0.3,0.2-0.5l3.1-5.4c0.1-0.1,0.1-0.2,0.3-0.2h0.7c0.1,0,0.2,0.1,0.2,0.2v5.5c0,0.1,0,0.1,0.1,0.1H228.9z M225,185.8 C224.9,185.8,224.9,185.9,225,185.8l2.1,0.1c0.1,0,0.1,0,0.1-0.1V182c0-0.1-0.1-0.1-0.1,0L225,185.8z"></path>
+							<path class="numbersFill" d="M20.9,182.3c0,0.7-0.3,1.2-0.7,1.6c-0.1,0.1-0.1,0.2,0,0.3c0.5,0.5,0.9,1.1,0.9,1.9c0,1.4-1.1,2.5-2.6,2.5 c-1.5,0-2.6-1.1-2.6-2.5c0-0.8,0.3-1.4,0.9-1.9c0.1-0.1,0.1-0.2,0-0.3c-0.4-0.4-0.7-1-0.7-1.6c0-1.3,1-2.3,2.4-2.3 C19.9,180,20.9,181,20.9,182.3z M20,186.1c0-0.8-0.6-1.4-1.5-1.4c-0.9,0-1.5,0.6-1.5,1.4c0,0.8,0.6,1.4,1.5,1.4 C19.4,187.5,20,186.9,20,186.1z M19.8,182.3c0-0.7-0.5-1.2-1.3-1.2s-1.3,0.5-1.3,1.2c0,0.7,0.5,1.2,1.3,1.2S19.8,183,19.8,182.3z"></path>
+							<path class="numbersFill" d="M4,125.9c0.1-0.3,0.1-0.6,0.1-1c0-0.1-0.1-0.2-0.2-0.1c-0.2,0.2-0.8,0.5-1.4,0.5c-1.4,0-2.4-1.1-2.5-2.5 c0-0.2,0-0.4,0-0.6c0.1-1.4,1.1-2.4,2.5-2.4c1.4,0,2.4,1.1,2.5,2.5c0.1,1,0.1,2.6,0,3.6c-0.2,1.4-1.1,2.5-2.5,2.5 c-1.3,0-2.4-1-2.4-2.3c0-0.1,0.1-0.2,0.2-0.2h0.6c0.1,0,0.2,0.1,0.2,0.2c0,0.6,0.7,1.2,1.3,1.2C3.3,127.3,3.8,126.8,4,125.9z M2.5,120.9c-0.8,0-1.2,0.6-1.3,1.3c0,0.2,0,0.5,0,0.6c0.1,0.7,0.6,1.3,1.3,1.3c0.8,0,1.2-0.5,1.3-1.3c0-0.2,0-0.4,0-0.6 C3.7,121.5,3.2,120.9,2.5,120.9z"></path>
+							<g>
+								<path class="numbersFill" d="M14.9,61.9c0-0.1-0.1-0.1-0.1,0l-1.7,1.9c-0.1,0.1-0.3,0.1-0.3-0.1v-0.9c0-0.2,0.2-0.4,0.2-0.5l1.7-2.1 c0.1-0.1,0.2-0.1,0.2-0.1h0.7c0.1,0,0.2,0.1,0.2,0.2v7c0,0.1,0,0.1,0.1,0.1h1.4c0.1,0,0.2,0.1,0.2,0.2v0.6c0,0.1-0.1,0.2-0.2,0.2 H13c-0.1,0-0.2-0.1-0.2-0.2v-0.6c0-0.1,0.1-0.2,0.2-0.2h1.8c0.1,0,0.1,0,0.1-0.1V61.9z"></path>
+								<path class="numbersFill" d="M21.7,60c1.4,0,2.4,0.9,2.6,2.5c0.1,1,0.1,2.6,0,3.6c-0.1,1.3-1,2.5-2.6,2.5c-1.4,0-2.4-0.9-2.6-2.5 c-0.1-1-0.1-2.6,0-3.6C19.2,61.1,20.1,60,21.7,60z M20.2,62.4c-0.1,1-0.1,2.6,0,3.6c0.1,0.7,0.5,1.4,1.5,1.4 c0.8,0,1.4-0.5,1.5-1.4c0.1-1,0.1-2.6,0-3.6c-0.1-0.7-0.5-1.4-1.5-1.4C20.9,61,20.3,61.6,20.2,62.4z"></path>
+							</g>
+							<g>
+								<path class="numbersFill" d="M58.8,17.9c0-0.1-0.1-0.1-0.1,0L57,19.8c-0.1,0.1-0.3,0.1-0.3-0.1v-0.9c0-0.2,0.2-0.4,0.2-0.5l1.7-2.1 c0.1-0.1,0.2-0.1,0.2-0.1h0.7c0.1,0,0.2,0.1,0.2,0.2v7c0,0.1,0,0.1,0.1,0.1h1.4c0.1,0,0.2,0.1,0.2,0.2v0.6c0,0.1-0.1,0.2-0.2,0.2 h-4.6c-0.1,0-0.2-0.1-0.2-0.2v-0.6c0-0.1,0.1-0.2,0.2-0.2h1.8c0.1,0,0.1,0,0.1-0.1V17.9z"></path>
+								<path class="numbersFill" d="M65.4,17.9c0-0.1-0.1-0.1-0.1,0l-1.7,1.9c-0.1,0.1-0.3,0.1-0.3-0.1v-0.9c0-0.2,0.2-0.4,0.2-0.5l1.7-2.1 c0.1-0.1,0.2-0.1,0.2-0.1h0.7c0.1,0,0.2,0.1,0.2,0.2v7c0,0.1,0,0.1,0.1,0.1h1.4c0.1,0,0.2,0.1,0.2,0.2v0.6c0,0.1-0.1,0.2-0.2,0.2 h-4.6c-0.1,0-0.2-0.1-0.2-0.2v-0.6c0-0.1,0.1-0.2,0.2-0.2h1.8c0.1,0,0.1,0,0.1-0.1V17.9z"></path>
+							</g>
+							<g>
+								<path class="numbersFill" d="M118.9,1.9c0-0.1-0.1-0.1-0.1,0l-1.7,1.9c-0.1,0.1-0.3,0.1-0.3-0.1V2.7c0-0.2,0.2-0.4,0.2-0.5l1.7-2.1 c0.1-0.1,0.2-0.1,0.2-0.1h0.7c0.1,0,0.2,0.1,0.2,0.2v7c0,0.1,0,0.1,0.1,0.1h1.4c0.1,0,0.2,0.1,0.2,0.2v0.6c0,0.1-0.1,0.2-0.2,0.2 h-4.6c-0.1,0-0.2-0.1-0.2-0.2V7.7c0-0.1,0.1-0.2,0.2-0.2h1.8c0.1,0,0.1,0,0.1-0.1V1.9z"></path>
+								<path class="numbersFill" d="M125.7,1.1c-0.6,0-1.2,0.6-1.2,1.2v0.2c0,0.1-0.1,0.2-0.2,0.2h-0.6c-0.1,0-0.2-0.1-0.2-0.2V2.3 c0-1.3,1-2.3,2.3-2.3s2.3,1,2.3,2.3c0,0.9-0.3,1.7-0.9,2.4l-2.3,2.6c-0.1,0.1,0,0.2,0.1,0.2h3c0.1,0,0.2,0.1,0.2,0.2v0.6 c0,0.1-0.1,0.2-0.2,0.2h-4.3c-0.1,0-0.2-0.1-0.2-0.2V7.5c0-0.2,0.1-0.3,0.1-0.3l2.7-3.1c0.5-0.6,0.7-1.1,0.7-1.8 C126.9,1.6,126.4,1.1,125.7,1.1z"></path>
+							</g>
+						</g>
+					</svg>
+
+				</div>
+
+				<div class="hoursDottedCircle">
+					<svg>
+						<style type="text/css">
+							.dottedLineFill{fill:#FFFFFF;}
+						</style>
+						<defs>
+							<mask id="dottedLineMask" x="0" y="0" width="300" height="292">
+							    <circle id="hoursDottedLineCircle" transform="translate(60) rotate(90 90 90)" class="hoursDottedLineCircle" r="120" cx="120" cy="120" fill="transparent" stroke-dasharray="753.982" stroke-dashoffset="0" style="stroke: rgb(255, 255, 255); stroke-dashoffset: 379.085; stroke-width: 15px; transform-origin: center center; transform: rotate(90deg);"></circle>
+							</mask>
+						  </defs>
+						<g style="fill:#0000FF;mask: url(#dottedLineMask)">
+							<path class="dottedLineFill" d="M18,183.4l-0.2-0.3c-0.1-0.2,0-0.4,0.1-0.5c0.2-0.1,0.4,0,0.5,0.1l0,0l0.2,0.3c0.1,0.2,0,0.4-0.1,0.5 C18.3,183.6,18.1,183.5,18,183.4z"></path>
+							<path class="dottedLineFill" d="M12,172.5l-0.1-0.3c-0.1-0.2,0-0.4,0.2-0.5c0.2-0.1,0.4,0,0.5,0.2l0,0l0.1,0.3c0.1,0.2,0,0.4-0.2,0.5 C12.3,172.8,12.1,172.7,12,172.5z"></path>
+							<path class="dottedLineFill" d="M7.2,161.1l-0.1-0.3c-0.1-0.2,0-0.4,0.2-0.5s0.4,0,0.5,0.2l0,0l0.1,0.3c0.1,0.2,0,0.4-0.2,0.5 S7.3,161.3,7.2,161.1z"></path>
+							<path class="dottedLineFill" d="M3.6,149.3L3.5,149c0-0.2,0.1-0.4,0.3-0.4c0.2,0,0.4,0.1,0.4,0.3l0,0l0.1,0.3c0,0.2-0.1,0.4-0.3,0.4 C3.9,149.6,3.7,149.5,3.6,149.3z"></path>
+							<path class="dottedLineFill" d="M1.2,137.2l0-0.3c0-0.2,0.1-0.4,0.3-0.4c0.2,0,0.4,0.1,0.4,0.3l0,0l0,0.3c0,0.2-0.1,0.4-0.3,0.4 C1.5,137.5,1.3,137.4,1.2,137.2z"></path>
+							<path class="dottedLineFill" d="M0.1,124.9l0-0.3c0-0.2,0.2-0.4,0.4-0.4c0.2,0,0.4,0.2,0.4,0.4l0,0l0,0.3c0,0.2-0.2,0.4-0.4,0.4 C0.3,125.3,0.1,125.1,0.1,124.9z"></path>
+							<path class="dottedLineFill" d="M0.2,112.5l0-0.3c0-0.2,0.2-0.4,0.4-0.4s0.4,0.2,0.4,0.4l0,0l0,0.3c0,0.2-0.2,0.4-0.4,0.4 C0.4,112.9,0.2,112.8,0.2,112.5z"></path>
+							<path class="dottedLineFill" d="M1.6,100.3l0-0.3c0-0.2,0.2-0.4,0.5-0.3c0.2,0,0.4,0.2,0.3,0.5l0,0l0,0.3c0,0.2-0.2,0.4-0.5,0.3 C1.7,100.7,1.6,100.5,1.6,100.3z"></path>
+							<path class="dottedLineFill" d="M4.3,88.2l0.1-0.3c0.1-0.2,0.3-0.4,0.5-0.3c0.2,0.1,0.4,0.3,0.3,0.5l0,0l-0.1,0.3c-0.1,0.2-0.3,0.4-0.5,0.3 C4.3,88.6,4.2,88.4,4.3,88.2z"></path>
+							<path class="dottedLineFill" d="M8.1,76.4l0.1-0.3c0.1-0.2,0.4-0.3,0.6-0.3c0.2,0.1,0.3,0.4,0.3,0.6l0,0L9,76.8C8.9,77,8.6,77.1,8.4,77 C8.2,76.9,8,76.7,8.1,76.4z"></path>
+							<path class="dottedLineFill" d="M13.2,65.2l0.1-0.3c0.1-0.2,0.4-0.3,0.6-0.2c0.2,0.1,0.3,0.4,0.2,0.6l0,0L14,65.6c-0.1,0.2-0.4,0.3-0.6,0.2 C13.2,65.7,13.1,65.4,13.2,65.2z"></path>
+							<path class="dottedLineFill" d="M19.4,54.5l0.2-0.2c0.1-0.2,0.5-0.3,0.7-0.1s0.3,0.5,0.1,0.7l0,0L20.2,55c-0.1,0.2-0.5,0.3-0.7,0.1 S19.2,54.7,19.4,54.5z"></path>
+							<path class="dottedLineFill" d="M26.6,44.5l0.2-0.2c0.2-0.2,0.5-0.3,0.7-0.1c0.2,0.2,0.3,0.5,0.1,0.7l0,0l-0.2,0.2c-0.2,0.2-0.5,0.3-0.7,0.1 C26.5,45,26.4,44.7,26.6,44.5z"></path>
+							<path class="dottedLineFill" d="M34.8,35.2L35,35c0.2-0.2,0.5-0.2,0.8,0s0.2,0.5,0,0.8l0,0L35.6,36c-0.2,0.2-0.5,0.2-0.8,0 C34.6,35.8,34.6,35.4,34.8,35.2z"></path>
+							<path class="dottedLineFill" d="M44,26.9l0.2-0.2c0.2-0.2,0.6-0.2,0.8,0.1c0.2,0.2,0.2,0.6-0.1,0.8l0,0l-0.2,0.2c-0.2,0.2-0.6,0.2-0.8-0.1 C43.7,27.4,43.7,27.1,44,26.9z"></path>
+							<path class="dottedLineFill" d="M53.9,19.5l0.2-0.2c0.3-0.2,0.6-0.1,0.8,0.2c0.2,0.3,0.1,0.6-0.2,0.8l0,0l-0.3,0.2c-0.3,0.2-0.6,0.1-0.8-0.2 S53.6,19.7,53.9,19.5z"></path>
+							<path class="dottedLineFill" d="M64.5,13.2l0.3-0.1c0.3-0.2,0.6,0,0.8,0.2c0.2,0.3,0,0.6-0.2,0.8l0,0l-0.3,0.1c-0.3,0.2-0.6,0-0.8-0.2 C64.1,13.7,64.2,13.4,64.5,13.2z"></path>
+							<path class="dottedLineFill" d="M75.7,8L76,7.9c0.3-0.1,0.7,0,0.8,0.3c0.1,0.3,0,0.7-0.3,0.8l0,0l-0.3,0.1c-0.3,0.1-0.7,0-0.8-0.3 C75.3,8.5,75.4,8.2,75.7,8z"></path>
+							<path class="dottedLineFill" d="M87.4,4l0.3-0.1C88,3.9,88.4,4,88.5,4.4S88.4,5.1,88,5.1l0,0l-0.3,0.1c-0.3,0.1-0.7-0.1-0.8-0.4 S87.1,4.1,87.4,4z"></path>
+							<path class="dottedLineFill" d="M99.4,1.2l0.3-0.1c0.3-0.1,0.7,0.2,0.7,0.5s-0.2,0.7-0.5,0.7l0,0l-0.3,0.1C99.3,2.6,99,2.3,98.9,2 C98.9,1.6,99.1,1.3,99.4,1.2z"></path>
+							<path class="dottedLineFill" d="M111.7-0.3l0.3,0c0.4,0,0.7,0.2,0.7,0.6c0,0.4-0.2,0.7-0.6,0.7l0,0l-0.3,0c-0.4,0-0.7-0.2-0.7-0.6 C111.1,0.1,111.3-0.3,111.7-0.3z"></path>
+							<path class="dottedLineFill" d="M124.1-0.6l0.3,0c0.4,0,0.7,0.3,0.6,0.7s-0.3,0.7-0.7,0.6l0,0l-0.3,0c-0.4,0-0.7-0.3-0.6-0.7 S123.7-0.6,124.1-0.6z"></path>
+							<path class="dottedLineFill" d="M136.4,0.4l0.3,0c0.4,0,0.6,0.4,0.6,0.8c0,0.4-0.4,0.6-0.8,0.6l0,0l-0.3,0c-0.4,0-0.6-0.4-0.6-0.8 S136,0.4,136.4,0.4z"></path>
+							<path class="dottedLineFill" d="M148.5,2.6l0.3,0.1c0.4,0.1,0.6,0.5,0.5,0.8c-0.1,0.4-0.5,0.6-0.8,0.5l0,0L148.2,4c-0.4-0.1-0.6-0.5-0.5-0.8 C147.8,2.8,148.2,2.6,148.5,2.6z"></path>
+							<path class="dottedLineFill" d="M160.4,6.1l0.3,0.1c0.4,0.1,0.6,0.5,0.4,0.9c-0.1,0.4-0.5,0.6-0.9,0.4l0,0l-0.3-0.1c-0.4-0.1-0.6-0.5-0.4-0.9 C159.6,6.2,160,6,160.4,6.1z"></path>
+							<path class="dottedLineFill" d="M171.8,10.8l0.3,0.1c0.4,0.2,0.5,0.6,0.3,1s-0.6,0.5-1,0.3l0,0l-0.3-0.1c-0.4-0.2-0.5-0.6-0.3-1 C171.1,10.8,171.5,10.6,171.8,10.8z"></path>
+							<path class="dottedLineFill" d="M182.7,16.6l0.3,0.2c0.3,0.2,0.5,0.7,0.3,1c-0.2,0.3-0.7,0.5-1,0.3l0,0l-0.3-0.2c-0.3-0.2-0.5-0.7-0.3-1 C181.9,16.5,182.4,16.4,182.7,16.6z"></path>
+							<path class="dottedLineFill" d="M193,23.5l0.2,0.2c0.3,0.2,0.4,0.7,0.2,1.1c-0.2,0.3-0.7,0.4-1.1,0.2l0,0l-0.2-0.2c-0.3-0.2-0.4-0.7-0.1-1.1 C192.2,23.3,192.7,23.3,193,23.5z"></path>
+							<path class="dottedLineFill" d="M202.5,31.4l0.2,0.2c0.3,0.3,0.3,0.8,0,1.1c-0.3,0.3-0.8,0.3-1.1,0l0,0l-0.2-0.2c-0.3-0.3-0.3-0.8,0-1.1 C201.7,31.1,202.2,31.1,202.5,31.4z"></path>
+							<path class="dottedLineFill" d="M211.1,40.3l0.2,0.2c0.3,0.3,0.3,0.8-0.1,1.1c-0.3,0.3-0.8,0.3-1.1-0.1l0,0l-0.2-0.2 c-0.3-0.3-0.3-0.8,0.1-1.1S210.8,39.9,211.1,40.3z"></path>
+							<path class="dottedLineFill" d="M218.8,49.9l0.2,0.2c0.3,0.4,0.2,0.9-0.2,1.1c-0.4,0.3-0.9,0.2-1.1-0.2l0,0l-0.2-0.2 c-0.3-0.4-0.2-0.9,0.2-1.1C218,49.5,218.5,49.6,218.8,49.9z"></path>
+							<path class="dottedLineFill" d="M225.5,60.3l0.1,0.3c0.2,0.4,0.1,0.9-0.3,1.1s-0.9,0.1-1.1-0.3l0,0l-0.1-0.3c-0.2-0.4-0.1-0.9,0.3-1.1 C224.7,59.8,225.2,59.9,225.5,60.3z"></path>
+							<path class="dottedLineFill" d="M231,71.4l0.1,0.3c0.2,0.4,0,0.9-0.4,1.1c-0.4,0.2-0.9,0-1.1-0.4l0,0l-0.1-0.3c-0.2-0.4,0-0.9,0.4-1.1 C230.4,70.8,230.8,71,231,71.4z"></path>
+							<path class="dottedLineFill" d="M235.4,82.9l0.1,0.3c0.1,0.4-0.1,0.9-0.5,1.1c-0.4,0.1-0.9-0.1-1.1-0.5l0,0l-0.1-0.3 c-0.1-0.4,0.1-0.9,0.5-1.1C234.8,82.2,235.3,82.5,235.4,82.9z"></path>
+							<path class="dottedLineFill" d="M238.6,94.9l0.1,0.3c0.1,0.5-0.2,0.9-0.7,1c-0.5,0.1-0.9-0.2-1-0.7l0,0l-0.1-0.3c-0.1-0.5,0.2-0.9,0.7-1 C238.1,94.1,238.5,94.4,238.6,94.9z"></path>
+							<path class="dottedLineFill" d="M240.5,107.1l0,0.3c0.1,0.5-0.3,0.9-0.8,1c-0.5,0.1-0.9-0.3-1-0.8l0,0l0-0.3c-0.1-0.5,0.3-0.9,0.8-1 C240.1,106.2,240.5,106.6,240.5,107.1z"></path>
+							<path class="dottedLineFill" d="M241.2,119.4l0,0.3c0,0.5-0.4,0.9-0.9,0.9s-0.9-0.4-0.9-0.9v0l0-0.3c0-0.5,0.4-0.9,0.9-0.9 C240.8,118.5,241.2,118.9,241.2,119.4z"></path>
+							<path class="dottedLineFill" d="M240.7,131.7l0,0.3c0,0.5-0.5,0.9-1,0.8s-0.9-0.5-0.8-1l0,0l0-0.3c0-0.5,0.5-0.9,1-0.8 S240.7,131.2,240.7,131.7z"></path>
+							<path class="dottedLineFill" d="M238.8,144l-0.1,0.3c-0.1,0.5-0.6,0.8-1.1,0.7c-0.5-0.1-0.8-0.6-0.7-1.1l0,0l0.1-0.3c0.1-0.5,0.6-0.8,1.1-0.7 C238.6,143,238.9,143.5,238.8,144z"></path>
+							<path class="dottedLineFill" d="M235.8,155.9l-0.1,0.3c-0.2,0.5-0.7,0.8-1.2,0.6c-0.5-0.2-0.8-0.7-0.6-1.2l0,0l0.1-0.3 c0.2-0.5,0.7-0.8,1.2-0.6S235.9,155.5,235.8,155.9z"></path>
+							
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div class="openingHoursCopy"><span class="a11y-offscreen">Hours open</span>
+				<p class="daysOpen" style="display: none"><span class="infoTextItem" style="transform: matrix(1, 0, 0, 1, 0.425575, 4.48748);">Mon - Fri 8 AM - 5 PM</span></p>
+				<p class="daysOpen" style="display: none"><span class="infoTextItem" style="transform: matrix(1, 0, 0, 1, 0.425575, 4.48748);">Sat - Sun 9 AM - 3 PM</span></p>
+				<!--
+				<p class="hoursOpen"><span class="infoTextItem">8 AM - 5 PM</span></p>
+				-->
+								<p class="bannerMessage"><span class="infoTextItem" style="transform: matrix(1, 0, 0, 1, 1.26559, 4.3263);">TAKE-OUT | DELIVERY 9am - 3pm DAILY</span></p>
+                
+				<p class="contactEmail"><span class="infoTextItem" style="transform: matrix(1, 0, 0, 1, 1.29297, 4.3182);"><a href="mailto:info@destroyer.la">info@destroyer.la</a></span></p>
+				<p class="contactEmail"><span class="infoTextItem" style="transform: matrix(1, 0, 0, 1, 1.30789, 4.3137);"><a href="tel:310.360.3860" aria-label="Phone number link - call us at 310.360.3860">310.360.3860</a></span></p>
+
+				<p class="noReservations"><span class="infoTextItem" style="transform: matrix(1, 0, 0, 1, 1.26902, 4.3253);">No reservations required</span></p>	
+			</div>
+		</div>
+ 	</div>
+
+ 	<div class="row">
+		<div class="columns small-12 medium-3 pull-right">
+			
+			<div class="mapGraphic">
+				<a href="https://goo.gl/maps/K71tAAHfL6v" target="_blank" rel="external">
+				<img src="./assets/map.png" alt="map - cross street is hayden ave and national blvd">
+				<div class="mapMarker"></div>
+			<span class="a11y-offscreen">, opens in a new window</span></a>
+			</div>
+			
+			<div class="locationCopy">
+				<a href="https://goo.gl/maps/VsAY74ah73R2" style="color:#FFF;" target="_blank" rel="external">
+					<p class="addressLine1"><span class="infoTextItem" style="transform: matrix(1, 0, 0, 1, 1.68529, 4.18072);">3578 Hayden Ave</span></p>
+					<p class="addressLine2"><span class="infoTextItem" style="transform: matrix(1, 0, 0, 1, 1.65516, 4.19274);">Culver City</span></p>
+					<p class="addressLine3"><span class="infoTextItem" style="transform: matrix(1, 0, 0, 1, 1.71757, 4.16756);">CA 90232</span></p>
+				<span class="a11y-offscreen">, opens in a new window</span></a>
+			</div>
+		</div>
+ 	</div>
+</div>
+
+            <div id="journal"></div>
+        <div class="modular-row journal" style="opacity: 1;">
+	<div class="row">
+		<div class="columns small-7 small-centered" style="margin-bottom:100px;">
+			<div class="hub-slider">
+
+		        <div class="hub-slider-slides">
+		            <ul class="clearfix">
+		            			            					            		<li data-key="4" style="z-index: 6; top: -40px; transform: scale(1.1); opacity: 0; transition: all 0.6s ease 0s;">
+					            	<img src="./assets/carousel-image-1.jpg" alt="ceramic bowl with granola">
+					            </li>
+				            				        		            					            		<li data-key="0" style="z-index: 5; top: 0px; transform: scale(1); opacity: 1; transition: all 0.6s ease 0s;">
+					            	<img src="./assets/carousel-image-2.jpg" alt="ceramic plate with dish">
+					            </li>
+				            				        		            					            		<li data-key="1" style="z-index: 4; top: 40px; transform: scale(0.9); opacity: 0.8; transition: all 0.6s ease 0s;">
+					            	<img src="./assets/carousel-image-3.jpg" alt="exterior view - minimal building detail">
+					            </li>
+				            				        		            					            		<li data-key="2" style="z-index: 3; top: 80px; transform: scale(0.8); opacity: 0.6; transition: all 0.6s ease 0s;">
+					            	<img src="./assets/carousel-image-4.jpg" alt="starry sky in desert">
+					            </li>
+				            				        		            					            		<li data-key="3" style="z-index: 1; top: 120px; opacity: 0.4; transform: scale(0.7); transition: all 0.6s ease 0s;">
+					            	<img src="./assets/carousel-image-5.jpg" alt="minimal artwork">
+					            </li>
+				            				        					</ul>
+				</div>
+
+	            <button class="hub-slider-arrow hub-slider-arrow_next" aria-label="Next slide">→</button>
+	            <button class="hub-slider-arrow hub-slider-arrow_prev" aria-label="Previous slide">←</button>
+
+			</div>
+		</div>
+ 	</div>
+</div>
+
+
+<div class="modular-row theEnd" aria-hidden="true" style="opacity: 1;">
+	<div class="row">
+		<div class="columns small-9">
+			<div class="destroyerStar" style="height: 1332px;">
+				<div class="destroyerStarLogo destroyerStarLogoMiddle clearfix" style="transform: rotate(0deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter destroyerStarLogoMiddleCenter" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, -207);">
+						<div class="logoLetterRow destroyer-d clearfix" style="height: 18.8506%; opacity: 1;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="height: 17.0362%; opacity: 1;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.479069;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="height: 15.2217%; opacity: 1;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.415763;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="height: 13.4072%; opacity: 1;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="height: 11.5928%; opacity: 1;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="height: 9.7783%; opacity: 1;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="height: 7.96383%; opacity: 1;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="height: 6.14937%; opacity: 1;"> 
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="height: 6.63633%; opacity: 1;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(10deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.41162;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.47776;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(20deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.415763;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.41162;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 1;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(30deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.485207;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.6652;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(40deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.41162;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.485207;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.41162;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.479069;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(50deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.998002;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(60deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.41162;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.485207;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(70deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.998002;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.47776;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.47812;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.41162;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(80deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.672373;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.479069;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(90deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.415763;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.64576;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.6652;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.485207;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(100deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544988;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.64576;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(110deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.664653;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.64512;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.643844;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(120deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.41162;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.400539;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.6652;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.479069;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(130deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.479069;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.6652;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(140deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.61115;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.485207;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.612305;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.41162;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(150deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.64576;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.6652;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(160deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.485207;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.544641;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.478482;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.47776;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.47776;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(170deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.64576;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.545334;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.544988;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(180deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.47812; visibility: hidden;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.6652;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47812;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.664653;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(190deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.485207; visibility: hidden;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.64512; visibility: hidden;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.41162;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069; visibility: hidden;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454; visibility: hidden;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.664653;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(200deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1; visibility: hidden;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47812; visibility: hidden;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.41162; visibility: hidden;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.6652; visibility: hidden;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.612884;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.415763;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(210deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1; visibility: hidden;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454; visibility: hidden;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.64576; visibility: hidden;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.644482;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.485207;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(220deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1; visibility: hidden;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776; visibility: hidden;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(230deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.6652;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.6652; visibility: hidden;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.415763;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.485207; visibility: hidden;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.479069;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(240deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47812; visibility: hidden;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.415763;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(250deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.41162;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.415763; visibility: hidden;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.6652;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.41162;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(260deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.47776;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.545334;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(270deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.41162;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.485574;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.485207;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.415763;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(280deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.485574;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.64576;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.479069;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.643844;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.47776;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(290deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.6652;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 1;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(300deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47812;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.479069;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47812;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.6652;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47812;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(310deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.479069;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.64576;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.415763;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.479069;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.41162;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(320deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.47776;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.47812;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.41162;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.64512;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.479069;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(330deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.64512;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 1;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.479069;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 1;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.544641;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(340deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.544641;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.64576;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.41162;">S</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.967454;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.967454;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.64576;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 0.545334;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter" style="opacity: 1;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.41162;">R</div>
+						</div>
+					</div>
+				</div>
+				<div class="destroyerStarLogo clearfix" style="transform: rotate(350deg) translateY(-80px); height: 586px;">
+					<div class="destroyerStarLogoCenter">
+						<div class="logoLetterRow destroyer-d clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.612884;">D</div>
+						</div>
+						<div class="logoLetterRow destroyer-e1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.47776;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-s clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.65415;">&nbsp;</div>
+						</div>
+						<div class="logoLetterRow destroyer-t clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.47776;">T</div>
+						</div>
+						<div class="logoLetterRow destroyer-r1 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible" style="opacity: 0.643844;">R</div>
+						</div>
+						<div class="logoLetterRow destroyer-o clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.485941;">O</div>
+						</div>
+						<div class="logoLetterRow destroyer-y clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.967454;">Y</div>
+						</div>
+						<div class="logoLetterRow destroyer-e2 clearfix" style="opacity: 0;">
+							<div class="logoLetter logoLetterVisible shimmer" style="opacity: 0.612884;">E</div>
+						</div>
+						<div class="logoLetterRow destroyer-r2 clearfix" style="opacity: 0;">
+							<div class="logoLetter shimmer" style="opacity: 0.47776;">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+ 	</div>
+</div>
+
+
+    
+    <div class="destroyerFooter" style="opacity: 1;">
+        <div class="row">
+            <div class="columns small-9">
+                <div class="romanLetters">
+                    <div id="spaceship" class="footerSpaceship" style="left: 42.5%;">
+                        <img src="./assets/destroyerLogoRoman.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns small-9 medium-3 hide-small hide-touch">
+                <div class="score " aria-hidden="true" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <span class="scoreCopy">score </span>
+                    <span class="odometer odometer-auto-theme" style="visibility:hidden;"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>
+                    <span class="odometer odometer-auto-theme" style="visibility:hidden;"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>
+                    <span class="odometer odometer-auto-theme" style="visibility: visible;"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span></div></span>
+                    <span class="odometer odometer-auto-theme" style="visibility: visible;"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">8</span></span></span></span></span></div></span>
+                    <span class="odometer odometer-auto-theme" style="visibility: visible;"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>
+                </div>
+            </div>
+            <div class="columns small-9 medium-3 hide-small hide-touch">
+                
+            </div>
+            <div class="columns small-9 medium-9 socialFooterColumn">
+                <div class="socialFooter" role="contentinfo">
+                    <a href="https://www.trycaviar.com/la/destroyer-10356?cav_medium=widget&amp;cav_source=destroyer-10356&amp;cvo_campaign=destroyer-10356&amp;cvosrc=localmarketing.widget.destroyer-10356&amp;how=delivery&amp;utm_campaign=destroyer-10356&amp;utm_content=destroyer-10356&amp;utm_medium=localmarketing&amp;utm_source=widget&amp;utm_term=la" class="twitterLink" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;click&#39;, &#39;homepage_careers&#39;);">DELIVERY</a>
+                    <span>|</span>
+                     <a href="https://squareup.com/gift/CRWQRJRV9J3P5/order" class="giftcardLink" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;click&#39;, &#39;homepage_giftcard&#39;);" rel="external">GIFT CARD<span class="a11y-offscreen">, opens in a new window</span></a>
+                    <span>|</span>
+                    <a href="http://eepurl.com/cd8qxr" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;click&#39;, &#39;homepage_subscribe&#39;);" rel="external">SUBSCRIBE<span class="a11y-offscreen">, opens in a new window</span></a>
+                    <span>|</span>
+                    <a href="https://www.instagram.com/destroyer.la/" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;click&#39;, &#39;homepage_journal&#39;);" rel="external">INSTAGRAM<span class="a11y-offscreen">, opens in a new window</span></a>
+                <span>|</span><a href="http://destroyer.la/a11y-statement.html" target="_blank" rel="external">ACCESSIBILITY<span class="a11y-offscreen">, opens in a new window</span></a></div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+        </div>
+    </section>
+    
+    
+
+
+
+    
+        <script src="./assets/a11y-destroyer.js.download"></script><style>.a11y-offscreen {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}</style>
+
+
+<img id="gen_fnStatisticsID_593169066510.9584" src="./assets/data" style="display:none;"></body></html>
