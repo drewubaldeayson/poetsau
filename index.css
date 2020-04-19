@@ -51,9 +51,11 @@ body {
 .date-block div div .right-text {
     float:right;
     text-align:right;
+    padding-right:10px;
 }
 
 .date-block div div .left-text {
+    padding-left:10px;
     float:left;
     text-align:left;
 }
