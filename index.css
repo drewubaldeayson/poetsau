@@ -1,0 +1,152 @@
+body {
+    font-family:  sans-serif;
+    background: whitesmoke;
+    min-height: 100vh;
+}
+
+.home-nav { 
+    display: flex;
+    padding-top:15px;
+    padding-bottom:10px;
+    color:black;
+    height: 80px;
+}
+
+.home-nav > * { 
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+}
+
+.home-nav a {
+  text-decoration-line: none;
+  color:black;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.home-nav .logo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+} 
+  
+
+.date-block div {
+    background-color: black;
+    height: 50px;
+}
+
+.date-block div span {
+    color: white;
+    padding-top:12px;
+}
+
+.date-block div div .right-text {
+    float:right;
+    text-align:right;
+}
+
+.date-block div div .left-text {
+    float:left;
+    text-align:left;
+}
+
+.date-block div div span .day-date{
+    padding-left:15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+  
+.carousel {
+    background: #EEE;
+}
+  
+.carousel img {
+    display: block;
+    height: 470px;
+}
+
+.collection-block div div .overlay-img {
+    position: relative;
+    left:0;
+}
+
+.collection-block div div .overlay-img-text {
+    left: 0;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    position:absolute;
+    top: 40%;
+    width: 100%;
+    color:white !important;
+    margin-left:145px;
+}
+
+.collection-block div div .view-products-btn {
+    left: 0;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    position:absolute;
+    top: 50%;
+    width: 35%;
+    color:white !important;
+    margin-left:120px;
+}
+
+.collection-block div div .view-products-btn :hover {
+    color:black !important;
+}
+
+.collection-block div .clock-canvas {
+    background-color:black;
+    left:25px;
+}
+
+.collection-block div .clock-canvas .clock {
+    margin-top:180px;
+    margin-left:30px;
+    width:350px;
+    height:350px;
+}
+
+.collection-title{
+    margin-top:240px;
+    position: absolute;
+    right:290;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.3em;
+    color: #000000;
+    transform: rotate(90deg);
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* 
+.collection-block div div .overlay-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.52);
+} */
