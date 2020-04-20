@@ -152,3 +152,128 @@ body {
     left: 0;
     background: rgba(0, 0, 0, 0.52);
 } */
+
+
+.product-bg::before{
+        content: "";
+        opacity:0.3;
+        position: absolute;
+        width : 100%;
+        height: 100%;
+        background: inherit;
+        background-image: url("covers/sam-burriss-uaq0y8pb6W4-unsplash.jpg");
+        background-size: contain;
+        background-size: 400px;
+        background-repeat: no-repeat;
+        background-position-x: 120%;
+        background-position-y: 70px;
+        
+}
+
+
+.product-title-bg{
+    background-color:black;
+}
+
+.products-title{
+    background-color:black;
+    margin-top:430px;
+    position: absolute;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    transform-origin: top left;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    left:45px;
+    transform: rotate(-90deg);
+    margin-bottom:50px;
+}
+
+
+.product-card {
+    width: 287px;
+    margin-top:100px;
+    margin-left:50px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    background: #fafafa;
+    background-color:transparent;
+}
+
+.product-card2 {
+    margin-top:215px;
+    margin-left:50px;
+    margin-left:50px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    background: #fafafa;
+    background-color:transparent;
+}
+
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+}
+
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-details {
+    padding: 30px;
+    background-color:transparent;
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.product-details h4 a {
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.product-details h4 a:hover {
+    color: rgba(219, 0, 0, 0.8);
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
