@@ -1,2 +1,2 @@
 # poetsph
-This is for POETS company in australia (private)>
+This is a private project developed under POETS
