@@ -339,3 +339,45 @@ body {
     height:245;
 }
 
+
+.footer-details{
+    height: 238px;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.81),
+      rgba(0, 0, 0, 0.81)
+    ),
+    url(../covers/rsz_mec-rawlings-yds3ucbhtx4-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+.footer-details div{
+    position:relative;
+    margin-top:25px;
+}
+
+.footer-details div span{
+    margin-left:40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+  
+}
+
+.footer-details div p{
+    margin-left:40px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    margin-top:20px;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.87);
+}
