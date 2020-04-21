@@ -1,6 +1,6 @@
 #clock {
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
     position: relative;
     background: black;
@@ -41,7 +41,7 @@
 }
 .inner {
     position: relative;
-    width: 88%;
+    width: 103%;
     height: 88%;
     background: black;
     border-radius: 50%;

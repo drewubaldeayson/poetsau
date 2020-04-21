@@ -34,14 +34,14 @@
         <div class="row">
             <div class="col-md-6">
                 <span class="right-text">
-                    <span class="day">Saturday</span>
-                    <span class="day-date">04-18-2020</span>
+                    <span class="day" id="dayToday"></span>
+                    <span class="day-date" id="dateToday"></span>
                 </span>
             </div>
             <div class="col-md-6">
                 <span class="left-text">
                     <span class="day">Date</span>
-                    <span class="day-date">18 Apr 2020 A.D. Earth</span>
+                    <span class="day-date" id="dateTodayWithAD"></span>
                 </span>
             </div>
         </div>
@@ -103,26 +103,34 @@
     <section class="collection-block">
         <div class="row">
             <div class="col-lg-4">
-                <img src="covers/brandon-erlinger-ford-2wSe9hhfpnM-unsplash.jpg" height="738px" width="460px">
+                <img src="covers/brandon-erlinger-ford-2wSe9hhfpnM-unsplash.jpg" height="738px" width="100%">
 
             </div>
-            <div class="col-lg-4">
-                <img src="covers/jonathan-borba-e0TolJMDiBs-unsplash.jpg" height="313px" width="410px">
+            <div class="col-lg-3">
+                <img src="covers/jonathan-borba-e0TolJMDiBs-unsplash.jpg" height="313px" width="100%">
 
-                <div class="overlay-img">
-                    <img src="covers/sharon-garcia-CSVtweubStY-unsplash.jpg" height="425px" width="410px">
-                    <span class="overlay-img-text">
-                        CRUISE 2020
-                    </span>
-                    <button type="button" class="btn btn-outline-light view-products-btn">View Products</button>
+                <div class="overlay-img" >
+                  
+                        <span class="overlay-img-text">
+                            CRUISE 2020
+                        </span>
+                        <button type="button" class="btn btn-outline-light view-products-btn">View Products</button>
+                    <!-- <img src="covers/sharon-garcia-CSVtweubStY-unsplash.jpg" height="425px" width="100%"> -->
+
                 </div>
 
 
             </div>
-
+            <div class="col-lg-1">
+                <div class="row rotated-text-row">
+                    <div class="rotate-text">
+                        <div>
+                            <span>OUR COLLECTIONS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-lg-4 clock-canvas">
-                <span class="collection-title">OURCOLLECTIONS</span>
-
                 <div id="clock_canvas" class="outer clock">
                     <!-- Inner -->
                     <div class="inner">
