@@ -153,23 +153,21 @@ body {
     background: rgba(0, 0, 0, 0.52);
 } */
 
-
-
-.product-bg::before{
-        content: "";
-        opacity:0.3;
-        position: absolute;
-        width : 100%;
-        height: 100%;
-        background: inherit;
-        background-image: url("covers/sam-burriss-uaq0y8pb6W4-unsplash.jpg");
-        background-size: contain;
-        background-size: 400px;
-        background-repeat: no-repeat;
-        background-position-x: 120%;
-        background-position-y: 70px;
-        
+.products-bg{
+    content: "";
+    opacity:0.3;
+    position: absolute;
+    width : 100%;
+    height: 100%;
+    background: inherit;
+    background-image: url("covers/sam-burriss-uaq0y8pb6W4-unsplash.jpg");
+    background-size: contain;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position-x: 120%;
+    background-position-y: 70px;
 }
+
 
 
 .product-title-bg{
@@ -278,3 +276,66 @@ body {
     color: #000;
     font-weight: 500;
 }
+
+
+.shop-features-block div {
+    background-color: #0E1213;
+    height: 212px;
+}
+
+.shop-features-block div span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    text-align: center;
+}
+
+.shop-features-block div div .desc1 {
+    margin-top:50px;
+}
+.shop-features-block div div .desc2 {
+    margin-top:80px;
+}
+.shop-features-block div div .desc3 {
+    margin-top:110px;
+}
+.shop-features-block div div .desc4 {
+    margin-top:140px;
+    margin-left:65px;
+}
+
+
+.instagram-logo{
+    height: 100px;
+}
+
+.instagram-logo span{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 37px;
+   margin-top:30px;
+   left:100px;
+   position:absolute;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.instagram-logo img{
+    width: 35px;
+    height: 35px;
+    left:50px;
+    position:absolute;
+    margin-top:35px;
+}
+
+.other-images{
+    height:245;
+}
+
