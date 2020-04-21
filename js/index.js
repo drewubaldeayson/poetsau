@@ -1,0 +1,1 @@
+$("#year_copyright").html(new Date().getFullYear())
