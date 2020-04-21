@@ -1,1 +1,1 @@
-$("#year_copyright").html(new Date().getFullYear())
+$("#year_copyright").html(new Date().getFullYear());
