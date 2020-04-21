@@ -69,7 +69,7 @@ body {
     background: #EEE;
 }
   
-.carousel img {
+.carousel-img {
     display: block;
     height: 470px;
 }
@@ -349,7 +349,7 @@ body {
     ),
     url(../covers/rsz_mec-rawlings-yds3ucbhtx4-unsplash.jpg);
     background-size: cover;
-    width: 100%;
+    width: 101.1%;
     position: relative;
     float: left;
 }
@@ -381,9 +381,9 @@ body {
     line-height: 16px;
     color: rgba(255, 255, 255, 0.87);
 }
-
 .footer-copyright div div{
-    height:50px;
+    height:40px;
+    width:100%;
     margin-left:50px;
     font-family: Roboto;
     font-style: normal;
