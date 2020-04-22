@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/themify-icons.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/clock.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
@@ -19,7 +20,7 @@
         <span>
             <a href="/">Home</a>
             <a href="/">Products</a>
-            <a href="/">Search</a>
+            <a  href="javascript:void(0)" onclick="openSearchForm_OnAnchorClick()">Search</a>
         </span>
         <a href="#" class='logo'>POETS</a>
         <span>
@@ -315,6 +316,20 @@
         </div>
     </section>
 
+
+    <div id="search-lightbox-wrap" class="" style="display: none;">
+        <div class="search-lightbox">
+            <div id="searchform-wrap">
+                <form id="searchform" >
+                    <i class="ti-search"></i>
+                    <input type="text" name="s" id="s" title="Search" placeholder="Search" autocomplete="off">
+                </form>
+            </div>
+            <!-- /searchform wrap -->
+            <div class="search-results-wrap"></div>
+        </div>
+        <i id="close-search-box" onclick="closeSearchForm_OnIconClick()"></i>
+    </div>
 
 </body>
 
