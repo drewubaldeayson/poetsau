@@ -218,6 +218,29 @@ body {
     background-position-y: 60%;
 }
 
+.rotated-site-title{
+    position:absolute;
+    left:97.5%;
+    margin-top:2%;
+
+}
+
+.rotated-site-title > div {
+    -webkit-transform: translate(0px, 110px) rotate(-90deg);
+            transform: translate(0px, 110px) rotate(-90deg);
+}
+  
+.rotated-site-title > div > span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 117px;
+    letter-spacing: -0.2em;
+    color: #FFFFFF;
+    margin:-330px;
+}
+
 
 .product-title-bg{
     background-color:black;
