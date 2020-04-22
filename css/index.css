@@ -218,6 +218,15 @@ body {
     background-position-y: 60%;
 }
 
+.product-bg-border{
+    width : 20%;
+    position: absolute;
+    height: 79.6%;
+    border: 1px solid black;
+    left:82%;
+    margin-top:2.5%;
+}
+
 .rotated-site-title{
     position:absolute;
     left:97.5%;
