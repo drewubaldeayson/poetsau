@@ -12,6 +12,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <span>
             <a href="/">Home</a>
             <a href="/">Products</a>
-            <a  href="javascript:void(0)" onclick="openSearchForm_OnAnchorClick()">Search</a>
+            <a href="javascript:void(0)" onclick="openSearchForm_OnAnchorClick()">Search</a>
         </span>
         <a href="#" class='logo'>POETS</a>
         <span>
@@ -132,13 +133,126 @@
                 </div>
             </div>
             <div class="col-lg-4 clock-canvas">
-                <div id="clock_canvas" class="outer clock">
-                    <!-- Inner -->
-                    <div class="inner">
-                        <div id="hand" class="hour"></div>
-                        <div id="hand" class="minute"></div>
-                        <div id="hand" class="second"></div>
+                <div class="clock">
+                    <div id='warped'>
+                        <span class='w0'>1</span>
+                        <span class='w1'> </span>
+                        <span class='w2'>2</span>
+                        <span class='w3'> </span>
+                        <span class='w4'>3</span>
+                        <span class='w5'> </span>
+                        <span class='w6'>4</span>
+                        <span class='w7'> </span>
+                        <span class='w8'>5</span>
+                        <span class='w9'> </span>
+                        <span class='w10'>6</span>
+                        <span class='w11'> </span>
+                        <span class='w12'>7</span>
+                        <span class='w13'> </span>
+                        <span class='w14'>8</span>
+                        <span class='w15'> </span>
+                        <span class='w16'>9</span>
+                        <span class='w17'> </span>
+                        <span class='w18'>1</span>
+                        <span class='w19'>0</span>
+                        <span class='w20'> </span>
+                        <span class='w21'>1</span>
+                        <span class='w22'>1</span>
+                        <span class='w23'> </span>
+                        <span class='w24'>1</span>
+                        <span class='w25'>2</span>
+                        <span class='w26'> </span>
+                        <span class='w27'>1</span>
+                        <span class='w28'>3</span>
+                        <span class='w29'> </span>
+                        <span class='w30'>1</span>
+                        <span class='w31'>4</span>
+                        <span class='w32'> </span>
+                        <span class='w33'>1</span>
+                        <span class='w34'>5</span>
+                        <span class='w35'> </span>
+                        <span class='w36'>1</span>
+                        <span class='w37'>6</span>
+                        <span class='w38'>  </span>
+                        <span class='w39'>1</span>
+                        <span class='w40'>7</span>
+                        <span class='w41'> </span>
+                        <span class='w42'>1</span>
+                        <span class='w43'>8</span>
+                        <span class='w44'> </span>
+                        <span class='w45'>1</span>
+                        <span class='w46'>9</span>
+                        <span class='w47'> </span>
+                        <span class='w48'>2</span>
+                        <span class='w49'>0</span>
+                        <span class='w50'> </span>
+                        <span class='w51'>2</span>
+                        <span class='w52'>1</span>
+                        <span class='w53'> </span>
+                        <span class='w54'>2</span>
+                        <span class='w55'>2</span>
+                        <span class='w56'> </span>
+                        <span class='w57'>2</span>
+                        <span class='w58'>3</span>
+                        <span class='w59'> </span>
+                        <span class='w60'>2</span>
+                        <span class='w61'>4</span>
+                        <span class='w62'> </span>
+                        <span class='w63'>2</span>
+                        <span class='w64'>5</span>
+                        <span class='w65'> </span>
+                        <span class='w66'>2</span>
+                        <span class='w67'>6</span>
+                        <span class='w68'> </span>
+                        <span class='w69'>2</span>
+                        <span class='w70'>7<span class="clock-focus-dot"></span></span>
+                        <span class='w71'></span>
+                        <span class='w72'>2</span>
+                        <span class='w73'>8</span>
+                        <span class='w74'> </span>
+                        <span class='w75'>2</span>
+                        <span class='w76'>9</span>
+                        <span class='w77'></span>
+                        <span class='w78'>3</span>
+                        <span class='w79'>0</span>
+                        <span class='w80'> </span>
+                        <span class='w81'>3</span>
+                        <span class='w82'>1</span>
                     </div>
+                    <div id='innerWarped'>
+                        <span class='w0'>1</span>
+                        <span class='w1'> </span>
+                        <span class='w2'>2</span>
+                        <span class='w3'> </span>
+                        <span class='w4'>3</span>
+                        <span class='w5'> </span>
+                        <span class='w6'>4</span>
+                        <span class='w7'> </span>
+                        <span class='w8'>5</span>
+                        <span class='w9'> </span>
+                        <span class='w10'>6</span>
+                        <span class='w11'> </span>
+                        <span class='w12'>7</span>
+                        <span class='w13'> </span>
+                        <span class='w14'>8</span>
+                        <span class='w15'> </span>
+                        <span class='w16'>9</span>
+                        <span class='w17'> </span>
+                        <span class='w18'>1</span>
+                        <span class='w19'>0</span>
+                        <span class='w20'> </span>
+                        <span class='w21'>1</span>
+                        <span class='w22'>1</span>
+                        <span class='w23'> </span>
+                        <span class='w24'>1</span>
+                        <span class='w25'>2</span>
+                    </div>
+                    <span class="ad-year-text">
+                        <div>
+                            <span id="year_clock"></span>
+                        </div>
+                    </span>
+                    <span class="ad-earth-text">A.D. Earth</span>
                 </div>
             </div>
         </div>
@@ -321,7 +435,7 @@
     <div id="search-lightbox-wrap" class="" style="display: none;">
         <div class="search-lightbox">
             <div id="searchform-wrap">
-                <form id="searchform" >
+                <form id="searchform">
                     <i class="ti-search"></i>
                     <input type="text" name="s" id="s" title="Search" placeholder="Search" autocomplete="off">
                 </form>
@@ -334,7 +448,7 @@
 
 </body>
 
-<script type="text/javascript" src="js/clock.js"></script>
+<script type="text/javascript" src="js/jquery.arctext.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 
 </html>
