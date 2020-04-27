@@ -23,10 +23,15 @@ if(mainDateToday.toString().length==1){
     $("#warped > #"+mainDateToday+"_outer").html(mainDateToday+`<span class="clock-focus-dot"></span>`)
     $(".clock-focus-dot").css("margin-left","2");
 } else{
-   
     $("#warped > #"+mainDateToday+"_outer").html(mainDateToday.toString().substring(1)+`<span class="clock-focus-dot"></span>`)
     $(".clock-focus-dot").css("margin-left","-5");
 }   
+
+for(var i=19;i<=31;i++){
+    $("#warped > #"+i+"_outer").css("color","rgba(255, 255, 255, 0.3)")
+    $("#warped > #"+i+"_outer_pos0").css("color","rgba(255, 255, 255, 0.3)")
+}
+
 
 function openSearchForm_OnAnchorClick(){
     $('body').css("overflow-y","hidden");

@@ -178,31 +178,22 @@ body {
     margin-top: 80%;
     margin-left: 35%;
     font-family: Roboto Mono;
+    font-weight:600;
     font-style: normal;
     color:rgba(219, 0, 0, 0.8);
     font-size: 18px;
 }
 
 .ad-year-text{
-    height: 140px;
-    white-space: nowrap;
-    width: 0;
-    font-size: 18px;
-}
-  
-.ad-year-text > div {
-    -webkit-transform: translate(0px, 110px) rotate(90deg);
-            transform: translate(0px, 110px) rotate(90deg);
-}
-  
-.ad-year-text > div > span {
     position:absolute;
-    margin-left: 92%;
     font-family: Roboto Mono;
     font-style: normal;
     color:white;
-    font-size: 18px;
-    
+    font-size: 17px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-left:43%;
+    margin-top:59%;
 }
 
 
