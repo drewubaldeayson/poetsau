@@ -160,7 +160,6 @@ body {
     width: 10px;
     background-color: white;
     border-radius: 50%;
-    margin-left:-5;
     margin-top:-180;
     display: block;
 }
@@ -170,7 +169,6 @@ body {
     width: 10px;
     background-color: white;
     border-radius: 50%;
-    margin-left:3px !important;  /* margin-left:-10px !important; */
     margin-top:-40px !important;
     display: block;
 }
