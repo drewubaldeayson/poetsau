@@ -37,6 +37,10 @@ body {
     font-size: 30px;
     line-height: 35px;
 } 
+
+.menu-focus{
+    font-weight:600 !important;
+}
   
 
 .date-block div {
@@ -195,8 +199,6 @@ body {
     margin-left:43%;
     margin-top:59%;
 }
-
-
 
 .rotated-text-row{
     flex-wrap: nowrap;
