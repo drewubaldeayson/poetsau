@@ -26,12 +26,37 @@
 .icon-star3:before {
 	content: "\e6c1";
 }
+.icon-email2:before {
+	content: "\e662";
+}
+.icon-zoom-in2:before {
+	content: "\e6ca";
+}
+.icon-shopping-cart:before {
+	content: "\e72f";
+}
+
 
 
 dl, dt, dd, ol, ul, li {
 	margin: 0;
 	padding: 0;
 }
+
+
+.clearfix:before{
+	content: " ";
+    display: table;
+}
+
+
+.divcenter {
+	position: relative !important;
+	float: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
 
 #page-title {
     position: relative;
@@ -82,6 +107,7 @@ dl, dt, dd, ol, ul, li {
 
 .breadcrumb li {margin-left:5px;}
 
+#header .container { position: relative; }
 
 .postcontent { width: 860px; }
 .nobottommargin { margin-bottom: 0 !important; }
@@ -105,7 +131,7 @@ dl, dt, dd, ol, ul, li {
 	position: relative;
 	margin-right: 4%;
 	margin-bottom: 50px;
-	float: left;
+	
 }
 
 .postcontent.col_last,
@@ -165,7 +191,7 @@ body:not(.device-touch) .grid-container {
 .product-image {
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 360px;
 	overflow: hidden;
 }
 
@@ -321,6 +347,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 .sidebar-widgets-wrap .widget {
 	padding-top: 50px;
 	border-top: 1px solid #EEE;
+	float: left;
 }
 
 .widget:first-child { margin-top: 0; }
@@ -420,6 +447,10 @@ html[xmlns] .slider-wrap {display: block;}
 
 .flex-control-nav li:hover a,
 .flex-control-nav li a.flex-active { background-color: #FFF; }
+
+
+.fslider[data-animation="fade"][data-thumbs="true"] .flexslider,
+.fslider.testimonial[data-animation="fade"] .flexslider { height: auto !important; }
 
 .widget_links ul,
 .widget_links li {
@@ -591,3 +622,22 @@ html[xmlns] .slider-wrap {display: block;}
 	margin: 0 10px 0 0;
 }
 
+
+.stretched #wrapper {
+	width: 100%;
+	margin: 0;
+	box-shadow: none;
+}
+img { max-width: 100%; }
+a img { border: none; }
+.center { text-align: center !important; }
+
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: -1px;
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
