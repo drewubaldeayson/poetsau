@@ -14,7 +14,7 @@ body {
 
 .image-carousel-caption{
     position:absolute;
-    bottom:20%;
+    bottom:15%;
     left:33%;
     z-index:10;
     color:#fff;
