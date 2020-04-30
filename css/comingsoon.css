@@ -87,6 +87,27 @@ body {
     position: relative;
     height:100%;
 }
+.overlay-img-2 {
+    background: linear-gradient( rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2) ), url(../covers/markus-spiske-299156-unsplash.jpg);
+    width: 100%;
+    background-size: 100% 100vh;
+    position: relative;
+    height:100%;
+}
+.overlay-img-3 {
+    background: linear-gradient( rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2) ), url(../covers/yonghyun-lee-W3soDuf_dQI-unsplash.jpg);
+    width: 100%;
+    background-size: 100% 100vh;
+    position: relative;
+    height:100%;
+}
+.overlay-img-4 {
+    background: linear-gradient( rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2) ), url(../covers/joseph-gruenthal-1057768-unsplash.jpg);
+    width: 100%;
+    background-size: 100% 100vh;
+    position: relative;
+    height:100%;
+}
 
 
 
