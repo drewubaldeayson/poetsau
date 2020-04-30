@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="css/themify-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/clock.css">
     <link rel="stylesheet" type="text/css" href="css/comingsoon.css">
 
@@ -20,7 +21,7 @@
 <body>
     <!--CAROUSEL SECTION-->
     <section>
-        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide carousel-fade carousel-animate " data-ride="carousel">
             <!-- Indicators -->
             <ul class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -32,16 +33,16 @@
             <!-- Wrapper for slides -->
 
             <div class="carousel-inner" role="listbox">
-                <p id="date_today" class="image-caraousel-date"></p>
+                <p id="date_today" class="image-caraousel-date delay-1s zoomIn animated"></p>
                 <div class="image-carousel-caption">
-                    <h3 class="image-carousel-header">POETS</h3>
-                    <p class="image-caraousel-desc">CULTURE CREATORS</p>
+                    <h3 class="image-carousel-header fadeInLeft delay-1s animated">POETS</h3>
+                    <p class="image-caraousel-desc fadeInRight delay-1s animated">CULTURE CREATORS</p>
 
                 </div>
                 <div id="time-container-wrap" class="image-caraousel-countdown">
                     <div id="time-container">
                         <span id="ticker" class="clock-label"></span>
-                        <span id="timeleft" class="clock-label">COUNTDOWN</span>
+                        <span id="timeleft" class="clock-label fadeInLeft delay-1s animated" >COUNTDOWN</span>
                         <figure id="canvas"></figure>
                     </div>
                 </div>
@@ -51,7 +52,7 @@
                 <div class="carousel-item d-block w-100 overlay-img-3"></div>
                 <div class="carousel-item d-block w-100 overlay-img-4"></div>
             </div>
-
+          
         </div>
 
     </section>
