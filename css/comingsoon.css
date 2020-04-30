@@ -81,7 +81,7 @@ body {
 }
 
 .overlay-img-1 {
-    background: linear-gradient( rgba(27, 27, 27, 0.1), rgba(27, 27, 27, 0.1) ), url(../covers/mike-von-ro9l9wezzba-unsplash_1.jpg);
+    background: linear-gradient( rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2) ), url(../covers/mike-von-ro9l9wezzba-unsplash_1.jpg);
     width: 100%;
     background-size: 100% 100vh;
     position: relative;
