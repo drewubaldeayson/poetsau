@@ -21,38 +21,40 @@
 <body>
     <!--CAROUSEL SECTION-->
     <section>
-        <div id="myCarousel" class="carousel slide carousel-fade carousel-animate " data-ride="carousel" data-interval="3000">
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ul>
-
+        <div id="myCarousel" class="carousel slide carousel-fade carousel-animate " data-ride="carousel"
+            data-interval="3000">
             <!-- Wrapper for slides -->
-
             <div class="carousel-inner" role="listbox">
-                <p id="date_today" class="image-caraousel-date delay-1s zoomIn animated"></p>
-                <div class="image-carousel-caption">
-                    <!-- <h3 class="image-carousel-header fadeInLeft delay-1s animated">POETS</h3>
-                    <p class="image-caraousel-desc fadeInRight delay-1s animated">CULTURE CREATORS</p> -->
-                    <img class="fadeInLeft delay-1s animated" src="covers/logo-whole.png" height="520px" width="470px">
+                <!-- Date -->
+                <div class="image-caraousel-date">
+                    <p id="date_today" class="delay-1s zoomIn animated"></p>
                 </div>
+                <!-- Logo  -->
+                <div class="image-carousel-caption">
+                    <img class="fadeInLeft delay-1s animated carousel-image-logo" src="covers/poets-logo.svg" />
+                </div>
+                <!-- Countdown  -->
                 <div id="time-container-wrap" class="image-caraousel-countdown">
                     <div id="time-container">
                         <span id="ticker" class="clock-label"></span>
-                        <span id="timeleft" class="clock-label fadeInLeft delay-1s animated" >COUNTDOWN</span>
+                        <span id="timeleft" class="clock-label fadeInLeft delay-1s animated">COUNTDOWN</span>
                         <figure id="canvas"></figure>
                     </div>
                 </div>
-
+                <!-- Carousel background -->
                 <div class="carousel-item active d-block w-100 overlay-img-1"></div>
                 <div class="carousel-item d-block w-100 overlay-img-2"></div>
                 <div class="carousel-item d-block w-100 overlay-img-3"></div>
                 <div class="carousel-item d-block w-100 overlay-img-4"></div>
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ul>
             </div>
-          
+
         </div>
 
     </section>
