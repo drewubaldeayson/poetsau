@@ -14,10 +14,16 @@ body {
 
 .image-carousel-caption{
     position:absolute;
-    bottom:15%;
-    left:33%;
-    z-index:10;
-    color:#fff;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* bottom: 15%;
+    left: 33%; */
+    z-index: 10;
+    color: #fff;
+    -webkit-filter: drop-shadow( 3px 3px 4px rgba(0, 0, 0, .8));
+    filter: drop-shadow( 3px 3px 4px rgba(0, 0, 0, .8));
 }
 
 .image-carousel-header{
@@ -47,10 +53,10 @@ body {
 }
 
 .image-caraousel-countdown{
-    position:absolute;
-    bottom:10%;
-    left:80%;
-    z-index:10;
+    position: absolute;
+    bottom: 85px;
+    right: 100px;
+    z-index: 10;
     color:#fff;
     font-family: Roboto;
     font-style: normal;
@@ -60,14 +66,17 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+    /* text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); */
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
 }
 
 .image-caraousel-date{
-    position:absolute;
-    bottom:90%;
-    left:85%;
-    z-index:10;
+    position: absolute;
+    top: 85px;
+    right: 160px;
+    z-index: 10;
+    color: #fff;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -76,37 +85,51 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+    /* text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2); */
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
 }
 
 .overlay-img-1 {
-    background: linear-gradient( rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2) ), url(../covers/mike-von-ro9l9wezzba-unsplash_1.jpg);
     width: 100%;
-    background-size: 100% 100vh;
+    height: 100%;
+    background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.5) ), url(../covers/mike-von-ro9l9wezzba-unsplash_1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
-    height:100%;
 }
 .overlay-img-2 {
-    background: linear-gradient( rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2) ), url(../covers/markus-spiske-299156-unsplash.jpg);
     width: 100%;
-    background-size: 100% 100vh;
+    height: 100%;
+    background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), url(../covers/markus-spiske-299156-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
-    height:100%;
+    opacity: 1;
 }
 .overlay-img-3 {
-    background: linear-gradient( rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2) ), url(../covers/yonghyun-lee-W3soDuf_dQI-unsplash.jpg);
     width: 100%;
-    background-size: 100% 100vh;
+    height: 100%;
+    background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), url(../covers/yonghyun-lee-W3soDuf_dQI-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
-    height:100%;
 }
 .overlay-img-4 {
-    background: linear-gradient( rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2) ), url(../covers/joseph-gruenthal-1057768-unsplash.jpg);
     width: 100%;
-    background-size: 100% 100vh;
+    height: 100%;
+    background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), url(../covers/joseph-gruenthal-1057768-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
-    height:100%;
 }
 
 
@@ -127,4 +150,35 @@ body {
     font-size: 18px !important;
     line-height: 21px;
     color:white !important;
+}
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .carousel-image-logo {
+        height: 350px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    .carousel-image-logo {
+        height: 550px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .carousel-image-logo {
+        height: 650px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .carousel-image-logo {
+        height: 900px;
+    }
 }
