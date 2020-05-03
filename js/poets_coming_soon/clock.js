@@ -91,14 +91,9 @@ function scaleCoordinates(delta, firstTime) {
 
 
 $(document).ready(function() {
-	if( jQuery('link[href*="css/dark-theme.css"]').length ) {
-		var opts={plate:"#424242",marks:"#424242",label:"#424242",hours:"#424242",minutes:"#424242",seconds:"#424242"};
-	} else {
-		var opts={plate:"#FFFFFF",marks:"#FFFFFF",label:"#FFFFFF",hours:"#FFFFFF",minutes:"#FFFFFF",seconds:"#FFFFFF"};
-	}
+	var opts={plate:"#FFFFFF",marks:"#FFFFFF",label:"#FFFFFF",hours:"#FFFFFF",minutes:"#FFFFFF",seconds:"#FFFFFF"};
 
-
-	SVG('canvas', '100%').clock('100%', '', opts).start();
+	//SVG('canvas', '100%').clock('100%', '', opts).start();
 
 	var n = initNumbers();
 	$('#time-container .numbers-container').append(n);
