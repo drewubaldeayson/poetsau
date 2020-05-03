@@ -1,6 +1,7 @@
 function getCountDown(cdate) {
 	// Set the unit values in milliseconds.
-	var msecPerMinute = 1000 * 60;
+	var msecPerSecond = 1000;
+	var msecPerMinute = msecPerSecond * 60;
 	var msecPerHour = msecPerMinute * 60;
 	var msecPerDay = msecPerHour * 24;
 
@@ -14,6 +15,7 @@ function getCountDown(cdate) {
 
 	// Get the difference in milliseconds.
 	var interval = date.getTime() - dateMsec;
+	var milliseconds = Math.floor(interval).toString().substring(7, 9);
 
 	// Calculate how many days the interval contains. Subtract that
 	// many days from the interval to determine the remainder.
@@ -29,10 +31,11 @@ function getCountDown(cdate) {
 
 	var seconds = Math.floor(interval / 1000);
 
+
 	// Display the result.
 	//				document.write(days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds.");
 
-	return (((days < 10) ? '0' + days : days) + " : " + ((hours < 10) ? '0' + hours : hours) + " : " + ((minutes < 10) ? '0' + minutes : minutes) + " : " + ((seconds < 10) ? '0' + seconds : seconds));
+	return (((days < 10) ? '0' + days : days) + " : " + ((hours < 10) ? '0' + hours : hours) + " : " + ((minutes < 10) ? '0' + minutes : minutes) + " : " + ((seconds < 10) ? '0' + seconds : seconds) + " : " + milliseconds);
 }
 
 function initNumbers() {
@@ -100,7 +103,7 @@ $(document).ready(function() {
 	var n = initNumbers();
 	$('#time-container .numbers-container').append(n);
 
-	$("#canvas").everyTime("1s", function(i) {
+	$("#canvas").everyTime("1ms", function(i) {
 		var c = {
 			year : 2020,
 			month : 06,
