@@ -157,6 +157,12 @@ body {
     color:white !important;
 }
 
+/*FIXED CSS FOR BOOTSTRAP 4 CAROUSEL TRANSITION */
+.carousel-inner{
+    -webkit-transform: translateZ(0) !important;
+    -moz-transform: translateZ(0) !important;
+}
+
 /* MEDIA QUERIES */
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
