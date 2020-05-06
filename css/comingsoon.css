@@ -91,14 +91,12 @@ body {
 .overlay-img-1 {
     width: 100%;
     height: 100%;
-    background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.5) ), 
+    background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.5)), 
     url(../covers/mike-von-ro9l9wezzba-unsplash_1.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
 }
+
 .overlay-img-2 {
     width: 100%;
     height: 100%;
@@ -111,6 +109,7 @@ body {
     position: relative;
     opacity: 1;
 }
+
 .overlay-img-3 {
     width: 100%;
     height: 100%;
@@ -122,6 +121,7 @@ body {
     background-attachment: fixed;
     position: relative;
 }
+
 .overlay-img-4 {
     width: 100%;
     height: 100%;
@@ -158,7 +158,7 @@ body {
 /* END FIXED CSS FOR BOOTSTRAP 4 CAROUSEL TRANSITION */
 
 /* MEDIA QUERIES */
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 490px and down) */
 @media screen and (max-width: 490px) {
     .carousel-image-logo {
         height: 400px;
@@ -240,7 +240,6 @@ body {
         font-size: 18px !important;
     }
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
