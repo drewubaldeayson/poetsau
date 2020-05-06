@@ -89,49 +89,43 @@ body {
 }
 
 .overlay-img-1 {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.5)), 
     url(../covers/mike-von-ro9l9wezzba-unsplash_1.jpg);
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .overlay-img-2 {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), 
     url(../covers/markus-spiske-299156-unsplash.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
-    opacity: 1;
 }
 
 .overlay-img-3 {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), 
     url(../covers/yonghyun-lee-W3soDuf_dQI-unsplash.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
 }
 
 .overlay-img-4 {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), 
     url(../covers/joseph-gruenthal-1057768-unsplash.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
 }
 
 .overlay-img-text {
