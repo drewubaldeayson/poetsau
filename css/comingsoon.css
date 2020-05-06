@@ -159,52 +159,11 @@ body {
 }
 
 /*FIXED CSS FOR BOOTSTRAP 4 CAROUSEL TRANSITION */
-.carousel-inner{
-    -webkit-transform: translateZ(0) !important;
-    -moz-transform: translateZ(0) !important;
+.carousel-inner > .item{
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    -o-transition: -o-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
 }
-.carousel-fade .carousel-inner .item {
-    opacity: 0;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
-  .carousel-fade .carousel-inner .active {
-    opacity: 1;
-  }
-  .carousel-fade .carousel-inner .active.left,
-  .carousel-fade .carousel-inner .active.right {
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-  }
-  .carousel-fade .carousel-inner .next.left,
-  .carousel-fade .carousel-inner .prev.right {
-    opacity: 1;
-  }
-  .carousel-fade .carousel-control {
-    z-index: 2;
-  }
-  
-  @media all and (transform-3d), (-webkit-transform-3d) {
-    .carousel-inner > .item.next,
-  .carousel-inner > .item.active.right {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  
-    .carousel-inner > .item.prev,
-  .carousel-inner > .item.active.left {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  
-    .carousel-inner > .item.next.left,
-  .carousel-inner > .item.prev.right,
-  .carousel-inner > .item.active {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
 /* END FIXED CSS FOR BOOTSTRAP 4 CAROUSEL TRANSITION */
 
 /* MEDIA QUERIES */
@@ -310,6 +269,7 @@ body {
     }
 }
 
+/* Landscape media query */
 @media only screen and (max-width: 812px) and (orientation: landscape) {
     .carousel-image-logo {
         height: 520px;
