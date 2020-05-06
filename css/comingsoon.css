@@ -160,9 +160,8 @@ body {
 
 /*FIXED CSS FOR BOOTSTRAP 4 CAROUSEL TRANSITION */
 .carousel-inner > .item{
-    -webkit-transition: -webkit-transform .5s ease-in-out;
-    -o-transition: -o-transform .5s ease-in-out;
-    transition: transform .5s ease-in-out;
+    -webkit-transform: translateZ(0); 
+    -moz-transform: translateZ(0);
 }
 /* END FIXED CSS FOR BOOTSTRAP 4 CAROUSEL TRANSITION */
 
@@ -269,7 +268,6 @@ body {
     }
 }
 
-/* Landscape media query */
 @media only screen and (max-width: 812px) and (orientation: landscape) {
     .carousel-image-logo {
         height: 520px;
