@@ -92,8 +92,7 @@ body {
     height: 100%;
     background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.5)), 
     url(../covers/mike-von-ro9l9wezzba-unsplash_1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -101,7 +100,7 @@ body {
     height: 100%;
     background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), 
     url(../covers/markus-spiske-299156-unsplash.jpg);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -110,7 +109,7 @@ body {
     height: 100%;
     background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), 
     url(../covers/yonghyun-lee-W3soDuf_dQI-unsplash.jpg);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -119,7 +118,7 @@ body {
     height: 100%;
     background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), 
     url(../covers/joseph-gruenthal-1057768-unsplash.jpg);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }

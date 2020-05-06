@@ -5896,7 +5896,7 @@ button.close {
 }
 
 .carousel-fade .carousel-item {
-  opacity: 0.4;
+  opacity: 0;
   transition-duration: 0.6s;
   transition-property: opacity;
 }
@@ -5909,7 +5909,7 @@ button.close {
 
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
-  opacity: 0.4;
+  opacity: 0;
 }
 
 .carousel-fade .carousel-item-next,
