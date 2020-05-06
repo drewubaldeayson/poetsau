@@ -242,10 +242,21 @@ body {
     .carousel-image-logo {
         height: 480px
     }
+
+    /* font size  */
+    #date_today{ 
+        text-align: center;
+        font-size: 12px !important;
+    }
+
+    .clock-label{
+        text-align: center;
+        font-size: 14px !important;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 600px) and (orientation: landscape) {
+@media screen and (min-width: 600px) {
     .carousel-image-logo {
         height: 550px;
     }
@@ -263,7 +274,7 @@ body {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .carousel-image-logo {
         height: 750px;
     }
@@ -282,7 +293,7 @@ body {
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (orientation: landscape) {
+@media only screen and (min-width: 1200px) {
     .carousel-image-logo {
         height: 950px;
     }
@@ -296,5 +307,34 @@ body {
     .clock-label{
         text-align: center;
         font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+    .carousel-image-logo {
+        height: 520px;
+    }
+
+    /* center date and countdown  */
+    .image-caraousel-countdown, .image-caraousel-date{
+        right: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+    }
+
+    .image-caraousel-countdown{
+        bottom: 50px;
+    }
+    
+    /* font size  */
+    #date_today{ 
+        text-align: center;
+        font-size: 13px !important;
+    }
+
+    .clock-label{
+        text-align: center;
+        font-size: 15px !important;
     }
 }
