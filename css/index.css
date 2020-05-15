@@ -6,19 +6,17 @@ body {
 }
 
 .home-nav { 
-    display: flex;
-    padding-top:15px;
-    padding-bottom:10px;
+    padding: 15px 35px 10px 35px;
     color:black;
-    height: 80px;
+    height: auto;
 }
 
-.home-nav > * { 
+/* .home-nav > * { 
     flex: 1; 
     display: flex; 
     align-items: center; 
     justify-content: space-around; 
-}
+} */
 
 .home-nav a {
   text-decoration-line: none;
@@ -31,12 +29,17 @@ body {
 }
 
 .home-nav .logo {
-    font-family: Roboto;
+    display: block;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
 } 
+
+.home-nav .nav-item {
+  padding-top: 10px;
+}
 
 .menu-focus{
     font-weight:600 !important;
@@ -71,10 +74,22 @@ body {
 }
 
   
-.carousel-img {
-    display: block;
-    width:100%;
-    height:  83%;
+.carousel-img1 {
+    height: 100%;
+    background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), 
+    url(../covers/jonathan-borba-duvnLKB-VnI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-img2 {
+    height: 100%;
+    background: linear-gradient( rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7) ), 
+    url(../covers/jonathan-borba-e0TolJMDiBs-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .image-carousel-caption{
@@ -774,4 +789,14 @@ body {
     left: 50%;
     font-size: 6px;
     transform: translate(-50%,-50%);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 992px) {
+    .home-nav .logo {
+        left: 50%;
+        position: absolute;
+        margin-left: -50px !important; 
+    } 
 }

@@ -6,17 +6,18 @@ body {
 }
 
 .image-carousel-caption{
-    position:absolute;
-    margin: 0;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* bottom: 15%;
-    left: 33%; */
+    left: 0;
+    right: 0;
     z-index: 10;
-    color: #fff;
-    -webkit-filter: drop-shadow( 3px 3px 4px rgba(0, 0, 0, .8));
-    filter: drop-shadow( 3px 3px 4px rgba(0, 0, 0, .8));
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* -webkit-filter: drop-shadow( 3px 3px 4px rgba(0, 0, 0, .8));
+    filter: drop-shadow( 3px 3px 4px rgba(0, 0, 0, .8)); */
 }
 
 .image-carousel-header{

@@ -2,7 +2,7 @@
 
 <head>
     <title>Poets - Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="css/themify-icons.css" rel="stylesheet">
@@ -11,15 +11,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
     <!--NAVIGATION-->
-    <nav class="home-nav">
+    <!-- <nav class="home-nav">
         <span>
             <a href="/" class="menu-focus">Home</a>
             <a href="./products.html">Products</a>
@@ -31,7 +31,41 @@
             <a href="/">Account</a>
             <a href="/">My Bag (0)</a>
         </span>
-    </nav>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light home-nav">
+        <a class="navbar-brand logo" href="#">POETS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mr-5 active">
+                    <a href="/">Home</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a href="./products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" onclick="openSearchForm_OnAnchorClick()">Search</a>
+                </li>
+            </ul>
+          <span class="navbar-text">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mr-5 active">
+                    <a href="/">Contact Us</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a href="/">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/">My Bag (0)</a>
+                </li>
+            </ul>
+          </span>
+        </div>
+      </nav>
+      
 
     <!--DATE SECTION-->
     <section class="date-block">
@@ -65,17 +99,17 @@
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <div class="view">
-                        <img class="d-block w-100 carousel-img" src="covers/jonathan-borba-duvnLKB-VnI-unsplash.jpg" height="470px">
+                        <img class="d-block w-100 carousel-img1">
                         <div class="mask rgba-black-light"></div>
                     </div>
-                    <div class="image-carousel-caption">
+                    <!-- <div class="image-carousel-caption">
                         <h3 class="image-carousel-header">Lorem Ipsum.</h3>
                         <p class="image-caraousel-desc">New Arrivals</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="carousel-item ">
                     <div class="view">
-                        <img class="d-block w-100 carousel-img" src="covers/jonathan-borba-e0TolJMDiBs-unsplash.jpg" height="470px">
+                        <img class="d-block w-100 carousel-img2">
                         <div class="mask rgba-black-light"></div>
                     </div>
                     <div class="image-carousel-caption">
@@ -86,12 +120,12 @@
             </div>
 
             <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <!-- <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
             <a class="carousel-control-next" href="#myCarousel" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
-            </a>
+            </a> -->
         </div>
         <!-- <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
             <img src="covers/jonathan-borba-duvnLKB-VnI-unsplash.jpg" alt="orange tree" />
