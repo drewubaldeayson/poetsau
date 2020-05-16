@@ -12,4 +12,4 @@ if (monthToday < 10) {
 } 
 
 var today = mainDateToday + ' • ' + monthToday + ' • ' + mainYearToday; 
-$("#date_today").html(`${today} A.D. EARTH`);
+document.getElementById('date_today').innerHTML = today + ' A.D. EARTH';
