@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
 .image-carousel-caption {
   top: 50%;
   left: 0;
@@ -16,6 +17,7 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 .image-carousel-header {
   font-family: Roboto;
   font-style: normal;
@@ -27,6 +29,7 @@ body {
   text-shadow: 0px 4px 20px rgba(142, 142, 142, 0.6);
   color: #fff;
 }
+
 .image-caraousel-desc {
   font-family: Roboto;
   font-style: normal;
@@ -80,6 +83,7 @@ body {
     margin: auto;
   }
 }
+
 .overlay-img-1 {
   height: 100%;
   background: linear-gradient(rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.5)),
@@ -87,6 +91,7 @@ body {
   background-position: center;
   background-size: cover;
 }
+
 .overlay-img-2 {
   height: 100%;
   background: linear-gradient(rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7)),
@@ -95,6 +100,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .overlay-img-3 {
   height: 100%;
   background: linear-gradient(rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7)),
@@ -103,6 +109,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .overlay-img-4 {
   height: 100%;
   background: linear-gradient(rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.7)),
@@ -111,6 +118,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .overlay-img-text {
   left: 0;
   position: relative;
@@ -118,6 +126,7 @@ body {
   width: 100%;
   margin-left: 34%;
 }
+
 .clock-label {
   font-family: "Roboto Mono";
   font-style: normal;
@@ -126,6 +135,7 @@ body {
   line-height: 21px;
   color: white !important;
 }
+
 @media screen and (max-width: 490px) {
   .carousel-image-logo {
     height: 400px;
@@ -152,6 +162,7 @@ body {
     font-size: 14px !important;
   }
 }
+
 @media screen and (min-width: 490px) {
   .carousel-image-logo {
     height: 480px;
@@ -165,6 +176,7 @@ body {
     font-size: 14px !important;
   }
 }
+
 @media screen and (min-width: 600px) {
   .carousel-image-logo {
     height: 550px;
@@ -178,6 +190,7 @@ body {
     font-size: 16px !important;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .carousel-image-logo {
     height: 750px;
@@ -191,6 +204,7 @@ body {
     font-size: 18px !important;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .carousel-image-logo {
     height: 950px;
@@ -204,6 +218,7 @@ body {
     font-size: 20px !important;
   }
 }
+
 @media only screen and (max-width: 812px) and (orientation: landscape) {
   .carousel-image-logo {
     height: 520px;
