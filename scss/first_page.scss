@@ -1,0 +1,50 @@
+@import 'config';
+@import 'carousels';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-stack;
+  background: $light-color;
+  line-height: 1.6;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 10;
+  padding: 25px 25px 0 25px;
+  position: absolute;
+
+  .nav-link {
+    color: #fff !important;
+    letter-spacing: 2px;
+  }
+}
+
+.carousel {
+  .carousel-caption {
+    left: 40px;
+    bottom: 0;
+    right: auto;
+    letter-spacing: 2px;
+    text-shadow: $text-shadow;
+  }
+}
+
+// Media queries
+@media only screen and (min-width: 992px) {
+  .center-links {
+    left: 50%;
+    position: absolute;
+    margin-left: -150px !important; 
+  }
+
+  .navbar-nav a {
+    font-size: 1.2em;
+    text-shadow: $text-shadow;
+  }
+}
