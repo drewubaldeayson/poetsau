@@ -88,9 +88,29 @@ body {
     0px 18px 23px rgba(0, 0, 0, 0.4);
 }
 
+table{
+  margin-top:-14px;
+}
+
 table td{
   width:33.33%
 }
+
+.number-circle{
+  margin-left:8px;
+  border:2px solid white;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius:1em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em; 
+}
+
 @media only screen and (min-width: 992px) {
   .center-links {
     left: 50%;
