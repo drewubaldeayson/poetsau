@@ -88,23 +88,9 @@ body {
     0px 18px 23px rgba(0, 0, 0, 0.4);
 }
 
-.navbar-horizontal {
-  width: 100%;
-  margin-top:-10px;
-  text-align: center;
+table td{
+  width:33.33%
 }
-
-.navbar div span {
-    color: #fff;
-    padding-top:-10px;
-    text-transform: uppercase;
-}
-
-.primary-text-div{
-    display: inline;
-    vertical-align: bottom;
-}
-
 @media only screen and (min-width: 992px) {
   .center-links {
     left: 50%;
