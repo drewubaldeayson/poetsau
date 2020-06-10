@@ -19,7 +19,7 @@
   <title>Poets</title>
 </head>
 
-<body>
+<body onload="initClock()">
   <!--NAVBAR SECTION-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="border-bottom: 3px solid white;">
 
@@ -49,18 +49,19 @@
     <table style="color: white; margin-bottom: 12px;" width="100%">
       <tr>
         <td>
-          <span style="font-size:-webkit-xxx-large">POETS</span><br/>
-          <span>10.11.2020 AD Earth</span>
+          <span style="font-size:-webkit-xxx-large;letter-spacing: 2;">POETS</span><br/>
+          <span id="date_text"></span>
         </td>
         <td style="text-align: center;">
-          <span style="padding-right:10px;vertical-align:bottom">CULTURE</span>
+          <span style="padding-right:10px;vertical-align:bottom;font-size:23">CULTURE</span>
           <a href="#">
             <img class="navbar-logo" src="covers/poets-brand-icon.png" height="100" />
           </a>
-          <span style="padding-left:10px;vertical-align:bottom">COLLECTION</span>
+          <span style="vertical-align:bottom;font-size:23">COLLECTION</span>
         </td>
         <td style="text-align: right;">
-          <span>12:30:34.23 <span class="number-circle">1</span></span></span>
+          <span id="clock_text">12:00:00.000</span>
+          <span class="number-circle">1</span>
         </td>
       </tr>
       
@@ -120,10 +121,6 @@
 
 <script src="js/poets_coming_soon/svg.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/poets_coming_soon/svg.easing.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/poets_coming_soon/svg.clock.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/poets_coming_soon/ThreeWebGL.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/poets_coming_soon/ThreeExtras.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/poets_coming_soon/jquery.timers.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/poets_coming_soon/clock.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/first_page.js" type="text/javascript" charset="utf-8"></script>
 
 </html>
