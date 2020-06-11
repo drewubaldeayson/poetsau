@@ -15,23 +15,39 @@
   <!--NAVBAR SECTION-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
     <a class="navbar-brand" href="#">
-      <img class="navbar-logo" src="covers/poets-brand.svg" height="50" />
+      <!-- LOGO AND DATE -->
+      <img class="navbar-logo" src="covers/poets-brand.svg" height="70" />
+      <p id="date_today"></p>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav center-links mr-auto">
-        <li class="nav-item mr-5">
+      <ul class="navbar-nav center-links">
+        <li class="nav-item mr-3">
           <a class="nav-link" href="#">CULTURE</a>
         </li>
+        <li class="nav-item mr-3">
+          <img src="./images/audio_visualizer.gif" width="85" >
+        </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CONNECTION</a>
+          <a class="nav-link" href="#">COLLECTION</a>
         </li>
       </ul>
       <ul class="navbar-nav cart-link ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">CART (0)</a>
+          <a class="nav-link">
+            <div class="time-container">
+              <span id="ticker" class="clock-label"></span>
+              <span id="timeleft" class="clock-label"></span>
+              <figure id="canvas"></figure>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="cart">3</div>
+          </a>
         </li>
       </ul>
     </div>
@@ -45,37 +61,37 @@
         <div class="carousel-item active overlay-img-1">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: VINCENT DELEGGE</p>
           </div>
         </div>
         <div class="carousel-item overlay-img-2">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: RYAN MACMANIMIE</p>
           </div>
         </div>
         <div class="carousel-item overlay-img-3">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: JOEL MUNIZ</p>
           </div>
         </div>
         <div class="carousel-item overlay-img-4">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: MIKE VON</p>
           </div>
         </div>
         <div class="carousel-item overlay-img-5">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: ADAM WHITLOCK</p>
           </div>
         </div>
         <div class="carousel-item overlay-img-6">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: JOSEPH GRUENTHAL</p>
           </div>
         </div>
       </div>
@@ -93,5 +109,7 @@
   <script src="js/poets_coming_soon/ThreeWebGL.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/poets_coming_soon/ThreeExtras.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/poets_coming_soon/jquery.timers.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/poets_coming_soon/clock.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/poets_first_page/clock.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src="js/poets_first_page/dynamic_date.js" type="text/javascript" charset="utf-8"></script>
 </html>
