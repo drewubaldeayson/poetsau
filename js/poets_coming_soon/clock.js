@@ -33,8 +33,6 @@ function getCountDown(cdate) {
 
 
 	// Display the result.
-	//				document.write(days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds.");
-
 	return (((days < 10) ? '0' + days : days) + " : " + ((hours < 10) ? '0' + hours : hours) + " : " + ((minutes < 10) ? '0' + minutes : minutes) + " : " + ((seconds < 10) ? '0' + seconds : seconds) + " : " + milliseconds);
 }
 
@@ -80,7 +78,6 @@ function scaleCoordinates(delta, firstTime) {
 		fs = +fs + ((delta * fs) / 555);
 		//set new font size %
 
-		//apply new values to attributes
 		$(this).css({
 			"left" : x + "px",
 			"top" : y + "px",
@@ -92,9 +89,6 @@ function scaleCoordinates(delta, firstTime) {
 
 $(document).ready(function() {
 	var opts={plate:"#FFFFFF",marks:"#FFFFFF",label:"#FFFFFF",hours:"#FFFFFF",minutes:"#FFFFFF",seconds:"#FFFFFF"};
-
-	//SVG('canvas', '100%').clock('100%', '', opts).start();
-
 	var n = initNumbers();
 	$('#time-container .numbers-container').append(n);
 
@@ -111,24 +105,19 @@ $(document).ready(function() {
 		var cd = new Date();
 		cd.setYear(c.year);
 		cd.setMonth(c.month);
-		//month start from 0
 		cd.setDate(c.day);
 		cd.setHours(c.hh, c.min, c.sec, c.milsec);
-		//hh min sec milsec
 		$('#timeleft').text(getCountDown(cd));
 	});
 
-	//////////////////////////////////////////////////////////////////////////////////////
 	var delta = 0;
 	var curWidth = $('#time-container').width();
 	if (curWidth != null) {
 		delta = curWidth - 555;
 		scaleCoordinates(delta, true);
 	}
-	//555 , 450 , 250
+
 	$(window).resize(function() {
 		scaleCoordinates($('#time-container').width() - 555, false);
 	});
-	///////////////////////////////////////////////////////////////////////////////////////
-
 }); 

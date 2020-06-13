@@ -7,67 +7,59 @@
   <link rel="stylesheet" href="css/themify-icons.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
   <link rel="stylesheet" href="./css/first_page.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <title>Poets</title>
 </head>
 
 <body onload="initClock()">
   <!--NAVBAR SECTION-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="border-bottom: 3px solid white;">
-
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="border-bottom: 3px solid white;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- we'll deal with this later when ramee finished the mobile design layout sketch hehe :D -->
-    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav center-links mr-auto">
-        <li class="nav-item mr-5">
-          <a class="nav-link" href="#">CULTURE</a>
-        </li>
-        <li class="nav-item mr-5 ">
-        
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CONNECTION</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav cart-link ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">CART (0)</a>
-        </li>
-      </ul>
-    </div> -->
     <table style="color: white; margin-bottom: 12px;" width="100%">
       <tr>
         <td>
-          <span style="font-size:-webkit-xxx-large;letter-spacing: 2;">POETS</span><br/>
-          <span id="date_text"></span>
+          <span style="font-size: 60; letter-spacing: 2;">POETS</span><br/>
+          <span id="date_today" style="vertical-align: bottom;"></span>
         </td>
         <td style="text-align: center;">
-          <span style="padding-right:10px;vertical-align:bottom;font-size:23">CULTURE</span>
-          <a href="#">
-            <img class="navbar-logo" src="covers/poets-logo-nav.svg" height="130" />
-          </a>
-          <span style="vertical-align:bottom;font-size:23">COLLECTION</span>
+          <span style="padding-right: 10px; vertical-align: bottom; font-size: 23">CULTURE</span>
+          <img class="navbar-logo" src="covers/poets-logo-nav.svg" height="130" />
+          <span style="vertical-align: bottom; font-size: 23">COLLECTION</span>
         </td>
         <td style="text-align: right;">
-          <span id="clock_text">12:00:00.000</span>
-          <span class="number-circle">1</span>
+          <div id="time-container-wrap" class="image-caraousel-countdown">
+            <div class="time-container">
+              <span id="ticker" class="clock-label"></span>
+              <span id="timeleft" class="clock-label"></span>
+              <figure id="canvas"></figure>
+            </div>
+          </div>
         </td>
       </tr>
-      
     </table>
-  
-  </nav>
+  </nav> -->
+  <div class="topnav">
+    <div>
+      <a>POETS</a>
+      <a id="date_text"></a>
+    </div>
+    <div>
+      <a>CULTURE</a>
+      <a><img class="navbar-logo" src="covers/poets-logo-nav.svg" height="130" /></a>
+      <a>COLLECTION</a>
+    </div>
+    <div>
+      <a id="clock_text">12:00:00.00</a>
+      <a id="cart">
+        <span>3</span>
+      </a>
+    </div>
+  </div>
   <!--CAROUSEL SECTION-->
   <section>
     <div id="landing-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
@@ -77,50 +69,43 @@
         <div class="carousel-item active overlay-img-1">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: JOEL MUNIZ</p>
           </div>
         </div>
         <div class="carousel-item overlay-img-2">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: VINCENT DELEGGE</p>
           </div>
         </div>
         <div class="carousel-item overlay-img-3">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: RYAN MCMANIMIE</p>
           </div>
         </div>
         <div class="carousel-item overlay-img-4">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: JOSEPH GRUENTHAL</p>
           </div>
         </div>
         <div class="carousel-item overlay-img-5">
           <p class="overlay-tag-line">TAG LINE HERE</p>
           <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
-          </div>
-        </div>
-        <div class="carousel-item overlay-img-6">
-          <p class="overlay-tag-line">TAG LINE HERE</p>
-          <div class="carousel-caption d-none d-md-block">
-            <p>FILM: RAMEE FLORENTINO</p>
+            <p>FILM: MIKE VON</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 </body>
-<script src="js/poets_coming_soon/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/poets_coming_soon/classie.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/poets_coming_soon/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/poets_coming_soon/jquery.cycle.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/poets_coming_soon/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/poets_coming_soon/classie.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/poets_coming_soon/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/poets_coming_soon/jquery.cycle.min.js" type="text/javascript" charset="utf-8"></script>
 
-<script src="js/poets_coming_soon/svg.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/poets_coming_soon/svg.easing.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/first_page.js" type="text/javascript" charset="utf-8"></script>
-
+  <script src="js/poets_coming_soon/svg.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/poets_coming_soon/svg.easing.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/poets_first_page/countdown.js" type="text/javascript" charset="utf-8"></script>
 </html>
