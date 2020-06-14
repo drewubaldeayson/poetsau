@@ -52,12 +52,13 @@ body {
     a:nth-child(1) {
       font-size: 63px;
       letter-spacing: 2;
-      line-height: initial;
+      line-height: 1;
       text-shadow: $text-shadow;
     }
 
     a:nth-child(2) {
       font-size: 21px;
+      line-height: 1;
       font-family: Calculator;
       text-shadow: $text-shadow;
     }
@@ -66,11 +67,19 @@ body {
   div:nth-child(2) {
     flex: 1;
     justify-content: center;
-    margin-left: 50px;
+    margin-left: 25px;
     text-align: center;
 
-    a:nth-child(1), a:nth-child(3) {
-      font-size: 20px;
+    a:nth-child(1) {
+      font-size: 22px;
+      vertical-align: bottom;
+      line-height: 3;
+      letter-spacing: 4;
+      text-shadow: $text-shadow;
+    }
+    
+    a:nth-child(3) {
+      font-size: 22px;
       vertical-align: bottom;
       line-height: 3;
       text-shadow: $text-shadow;
@@ -100,6 +109,18 @@ body {
   }
 }
 
+.carousel-caption {
+  font-size: 12px !important;
+}
+  
+.overlay-tag-line {
+  top: 80%;
+  left: 75%;
+  margin: 0;
+  z-index: 10;
+  position: relative;
+}
+
 // old nav
 .navbar {
   width: 100%;
@@ -118,6 +139,7 @@ body {
     left: 40px;
     bottom: 0;
     right: auto;
+    font-size: 12px;
     letter-spacing: 2px;
     text-shadow: $text-shadow;
   }
