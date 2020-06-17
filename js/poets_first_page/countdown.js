@@ -5,7 +5,7 @@ const monthToday = dateToday.getMonth() + 1;
 const mainDateToday = dateToday.getDate();
 const numericalMonth = monthToday.toString().length == 1 ? "0".concat(monthToday) : monthToday;
 
-$("#date_text").html(numericalMonth + " • " + dateToday.getDate() + " • " + dateToday.getFullYear() + " A.D. EARTH");
+$("#date_text").html(numericalMonth + "•" + dateToday.getDate() + "•" + dateToday.getFullYear() + " A.D.EARTH");
 
 Number.prototype.pad = function (n) {
     for (var r = this.toString(); r.length < n; r = 0 + r);
@@ -22,7 +22,7 @@ function updateClock() {
         minValue = min.pad(2),
         secValue = sec.pad(2),
         milValue = Math.floor(milli / 10).toFixed(0);
-    document.getElementById("clock_text").firstChild.nodeValue = houValue + " : " + minValue + " : " + secValue + " : " + milValue
+    document.getElementById("clock_text").firstChild.nodeValue = houValue + ":" + minValue + ":" + secValue + ":" + milValue
 }
 
 function initClock() {

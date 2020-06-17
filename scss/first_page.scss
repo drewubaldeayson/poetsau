@@ -59,7 +59,9 @@ body {
     a:nth-child(2) {
       font-size: 21px;
       line-height: 1;
-      font-family: Calculator;
+      margin-left: 3px;
+      letter-spacing: 0.2px;
+      font-family: $font-secondary;
       text-shadow: $text-shadow;
     }
   }
@@ -91,8 +93,8 @@ body {
     text-align: right;
     
     a:nth-child(1) {
-      font-size: 21px;
-      font-family: Calculator;
+      font-size: 18px;
+      font-family: $font-secondary;
       text-shadow: $text-shadow;
     }
   
@@ -101,24 +103,30 @@ body {
       margin-left: 20px;
       border: 1.5px solid #fff;
       border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
   
       span {
+        color: #000;
+        font-weight: bold;
         padding: 5px 5px;
+      }
+
+      &:hover {
+        background: transparent;
+        transition: 0.5s;
+
+        span {
+          color: #fff;
+        }
       }
     }
   }
 }
 
 .carousel-caption {
-  font-size: 12px !important;
-}
-  
-.overlay-tag-line {
-  top: 80%;
-  left: 75%;
-  margin: 0;
-  z-index: 10;
-  position: relative;
+  font-size: 13px !important;
+  font-family: $font-secondary;
 }
 
 // old nav
