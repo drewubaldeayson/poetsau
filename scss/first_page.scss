@@ -18,6 +18,35 @@ body {
   justify-content: center;
 }
 
+.tempnav1 {
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  padding-top: 150px;
+  z-index: 10;
+  width: 95%;
+
+  .temphr1 {
+    width: 45%;
+    border: 1.5px solid #fff;
+  }
+}
+
+.tempnav2 {
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  padding-top: 150px;
+  z-index: 10;
+  width: 95%;
+
+  .temphr2 {
+    width: 45%;
+    float: right;
+    border: 1.5px solid #fff;
+  }
+}
+
 // new nav
 .topnav {
   background-color: transparent;
@@ -25,7 +54,7 @@ body {
   position: absolute;
   display: flex;
   align-items: center;
-  border-bottom: 3px solid #fff;
+  // border-bottom: 3px solid #fff;
   z-index: 10;
   width: 95%;
 
@@ -74,7 +103,7 @@ body {
   div:nth-child(2) {
     flex: 1;
     justify-content: center;
-    margin-left: 25px;
+    margin-left: 5px;
     text-align: center;
 
     a:nth-child(1) {
