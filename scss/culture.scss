@@ -1,0 +1,215 @@
+@import 'config';
+@import 'carousels';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-stack;
+  background: $light-color;
+  line-height: 1.6;
+}
+
+#main {
+  height: 100%;
+  background: $background-gradient, url(../covers/culture_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tempnav1 {
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  padding-top: 150px;
+  z-index: 10;
+  width: 95%;
+
+  .temphr1 {
+    width: 655px;
+    border: 1.5px solid #fff;
+  }
+}
+
+.tempnav2 {
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  padding-top: 150px;
+  z-index: 10;
+  width: 95%;
+
+  .temphr2 {
+    width: 655px;
+    float: right;
+    border: 1.5px solid #fff;
+  }
+}
+
+// new nav
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  // border-bottom: 3px solid #fff;
+  z-index: 10;
+  width: 95%;
+
+  .icon {
+    display: none;
+  }
+
+  div {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 0 10px 0;
+    text-decoration: none;
+    font-size: 17px;
+
+    div:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
+
+  div:nth-child(1) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    a:nth-child(1) {
+      font-size: 70.5px;
+      margin-left: -3px;
+      letter-spacing: 2;
+      line-height: 1;
+      text-shadow: $text-shadow;
+    }
+
+    a:nth-child(2) {
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.2px;
+      font-family: $font-secondary;
+      text-shadow: $text-shadow;
+    }
+  }
+
+  div:nth-child(2) {
+    flex: 1;
+    justify-content: center;
+    margin-left: 5px;
+    text-align: center;
+
+    a:nth-child(1) {
+      font-size: 20px;
+      vertical-align: bottom;
+      line-height: 4.5; 
+      letter-spacing: 4;
+      text-shadow: $text-shadow;
+    }
+
+    a:nth-child(2) {
+      padding: 10;
+    }
+    
+    a:nth-child(3) {
+      font-size: 20px;
+      vertical-align: bottom;
+      line-height: 4.5;
+      text-shadow: $text-shadow;
+    }
+  }
+
+  div:nth-child(3) {
+    flex: 1;
+    text-align: right;
+    
+    a:nth-child(1) {
+      font-size: 18px;
+      font-family: $font-secondary;
+      text-shadow: $text-shadow;
+    }
+  
+    #cart {
+      padding: 10px;
+      margin-left: 20px;
+      border: 1.5px solid #fff;
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+  
+      span {
+        color: #000;
+        font-weight: bold;
+        padding: 5px 5px;
+      }
+
+      &:hover {
+        background: transparent;
+        transition: 0.5s;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.carousel-caption {
+  margin-left: -5;
+  font-size: 13px !important;
+  font-family: $font-secondary;
+}
+
+// old nav
+.navbar {
+  width: 100%;
+  z-index: 10;
+  padding: 25px 25px 0 25px;
+  position: absolute;
+
+  .nav-link {
+    color: #fff !important;
+    letter-spacing: 2px;
+  }
+}
+
+.carousel {
+  .carousel-caption {
+    left: 40px;
+    bottom: 0;
+    right: auto;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-shadow: $text-shadow;
+  }
+}
+
+// Media queries
+@media only screen and (min-width: 992px) {
+  .center-links {
+    left: 50%;
+    position: absolute;
+    margin-left: -150px !important; 
+  }
+
+  .navbar-nav a {
+    font-size: 1.2em;
+    text-shadow: $text-shadow;
+  }
+}
