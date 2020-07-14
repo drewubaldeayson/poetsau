@@ -7,27 +7,173 @@
 }
 
 body {
-  margin: 16px;
+  margin: 6px 14px;
   line-height: 1.6;
   font-family: $font-stack;
-  background: $light-color;
+  background: #000;
   font-family: $font-secondary;
 }
 
-#date {
-  font-size: 16px;
-  margin: 15px;
-}
-
-.header {
+.nav-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
+.tempnav1 {
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  padding-top: 150px;
+  z-index: 1;
+  width: 95%;
+
+  .temphr1 {
+    width: 45%;
+    border: 1.5px solid #fff;
+  }
+}
+
+.tempnav2 {
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  padding-top: 150px;
+  z-index: 1;
+  width: 95%;
+
+  .temphr2 {
+    width: 45%;
+    float: right;
+    border: 1.5px solid #fff;
+  }
+}
+
+// new nav
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  // border-bottom: 3px solid #fff;
+  z-index: 10;
+  width: 95%;
+
+  .icon {
+    display: none;
+  }
+
+  div {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 0 10px 0;
+    text-decoration: none;
+    font-size: 17px;
+
+    div:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
+
+  div:nth-child(1) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    a:nth-child(1) {
+      font-size: 70.5px;
+      margin-left: -3px;
+      letter-spacing: 2;
+      line-height: 1;
+      text-shadow: $text-shadow;
+    }
+
+    a:nth-child(2) {
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.2px;
+      font-family: $font-secondary;
+      text-shadow: $text-shadow;
+    }
+  }
+
+  div:nth-child(2) {
+    flex: 1;
+    justify-content: center;
+    margin-left: 5px;
+    text-align: center;
+
+    a:nth-child(1) {
+      font-size: 20px;
+      vertical-align: bottom;
+      line-height: 4.5; 
+      letter-spacing: 4;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: $text-shadow;
+    }
+
+    a:nth-child(2) {
+      padding: 10;
+    }
+    
+    a:nth-child(3) {
+      font-size: 20px;
+      vertical-align: bottom;
+      line-height: 4.5;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: $text-shadow;
+    }
+  }
+
+  div:nth-child(3) {
+    flex: 1;
+    text-align: right;
+    
+    a:nth-child(1) {
+      font-size: 18px;
+      font-family: $font-secondary;
+      text-shadow: $text-shadow;
+    }
+  
+    #cart {
+      padding: 10px;
+      margin-left: 20px;
+      border: 1.5px solid #fff;
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+  
+      span {
+        color: #000;
+        font-weight: bold;
+        padding: 5px 5px;
+      }
+
+      &:hover {
+        background: transparent;
+        transition: 0.5s;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .collections {
-  margin: 15px 0 15px 0;
+  margin: 380px 0 8px 0;
 }
 
 .img-responsive {
@@ -35,3 +181,96 @@ body {
   height: 120px;
   object-fit: cover;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 450px) {
+  .tempnav1 {
+    padding-top: 32px;
+    width: 95%;
+
+    .temphr1 {
+      width: 43%;
+      border: 1px solid #fff;
+    }
+  }
+
+  .tempnav2 {
+    padding-top: 32px;
+    z-index: 1;
+    width: 95%;
+
+    .temphr2 {
+      width: 43%;
+      border: 1px solid #fff;
+    }
+  }
+
+  .topnav {
+    .navbar-logo {
+      height: 50;
+    }
+
+    div {
+      padding: 0;
+      font-size: 9px;
+    }
+    
+    div:nth-child(1) {
+      a:nth-child(1) {
+        font-size: 24.5px;
+        margin-left: -2px;
+      }
+
+      a:nth-child(2) {
+        font-size: 6px;
+      }
+    }
+
+    div:nth-child(2) {
+      margin-left: 0;
+      margin-top: 2px;
+      flex: none;
+
+      a:nth-child(1) {
+        font-size: 6px;
+        letter-spacing: 1.5;
+      }
+      
+      a:nth-child(3) {
+        font-size: 6px;
+      }
+    }
+
+    div:nth-child(3) {
+      a:nth-child(1) {
+        font-size: 6px;
+      }
+
+      #cart {
+        padding: 3px;
+        margin-left: 0;
+
+        span {
+          padding: 3px 3px;
+        }
+      }
+    }
+  }
+
+  .collections {
+    margin: 80px 0 8px 0;
+  }
+}
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}

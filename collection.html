@@ -14,13 +14,34 @@
   <title>Poets</title>
 </head>
 
-<body>
+<body onload="initClock()">
+  <div class="nav-container">
+    <div class="topnav">
+      <div>
+        <a>POETS</a>
+        <a id="date_text"></a>
+      </div>
+      <div>
+        <a href="/culture.html">CULTURE</a>
+        <a><img class="navbar-logo" src="covers/poets-logo-nav.svg" height="160" /></a>
+        <a href="/collection.html">COLLECTION</a>
+      </div>
+      <div>
+        <a id="clock_text">12:00:00.00</a>
+        <a id="cart">
+          <span>3</span>
+        </a>
+      </div>
+    </div>
+    <div class="tempnav1">
+      <hr class="temphr1">
+    </div>
+    <div class="tempnav2">
+      <hr class="temphr2">
+    </div>
+  </div>
   <div class="container d-flex h-100">
     <div class="row justify-content-center align-self-center">
-      <div class="header">
-        <a><img class="navbar-logo" src="covers/poets-logo-text.svg" height="140" /></a>
-        <a id="date">05/13/2020 10:20am NYC</a>
-      </div>
       <div class="collections">
         <div class="row no-gutters">
           <div class="col-3">
@@ -83,5 +104,5 @@
 
   <script src="js/poets_coming_soon/svg.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/poets_coming_soon/svg.easing.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/poets_first_page/countdown.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/poets_collections/countdown.js" type="text/javascript" charset="utf-8"></script>
 </html>
