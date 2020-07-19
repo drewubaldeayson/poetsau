@@ -195,6 +195,7 @@ body {
   color: #fff;
   text-align: left;
   display: flex;
+  flex: 1;
   align-items: center;
 
   .instagram-image {
@@ -204,6 +205,8 @@ body {
   .instagram-link {
     display: inline-flex;
     align-items: center;
+    order: 1;
+    width: 15%;
 
     .instagram-text {
       text-decoration: none;
@@ -214,30 +217,42 @@ body {
   }
 
   ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    margin-left: 100px;
-    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    order: 2;
+
+    // li:nth-child(2) {
+    //   padding: 0 8px;
+    // }
+    li span {
+      font-size: 11px;
+      padding: 0 6px;
+      margin-bottom: 1.5px;
+    }
   }
 
   li {
-    float: right;
+    display: flex;
+    align-items: center;
   }
 
   li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 0 8px;
     font-size: 8px;
     text-decoration: none;
   }
 
-  li a:hover {
-    color: #f2f2f2;
+  .blank-div {
+    order: 3;
+    width: 15%;
   }
 }
+
+
 
 
 
@@ -378,13 +393,9 @@ body {
       display: block;
       color: white;
       text-align: center;
-      padding: 0 0 0 12px;
+      padding: 0;
       font-size: 8px;
       text-decoration: none;
-    }
-
-    li a:hover {
-      background-color: #f2f2f2;
     }
   }
 }
@@ -528,13 +539,8 @@ body {
       display: block;
       color: white;
       text-align: center;
-      padding: 0 0 0 12px;
       font-size: 9px;
       text-decoration: none;
-    }
-
-    li a:hover {
-      background-color: #f2f2f2;
     }
   }
 }
@@ -681,165 +687,239 @@ body {
       display: block;
       color: white;
       text-align: center;
-      padding: 0 0 0 12px;
       font-size: 9px;
       text-decoration: none;
-    }
-
-    li a:hover {
-      background-color: #f2f2f2;
     }
   }
 }
 
-// /* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 768px) {...}
-
 // /* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+  .tempnav1 {
+    padding-top: 95px;
+    width: 90%;
+
+    .temphr1 {
+      width: 46%;
+      border: 1.5px solid #fff;
+    }
+  }
+
+  .tempnav2 {
+    padding-top: 95px;
+    z-index: 1;
+    width: 90%;
+
+    .temphr2 {
+      width: 46%;
+      border: 1.5px solid #fff;
+    }
+  }
+
+  .topnav {
+    width: 90%;
+
+    .navbar-logo {
+      height: 120;
+    }
+
+    div {
+      font-size: 16px;
+    }
+    
+    div:nth-child(1) {
+      a:nth-child(1) {
+        font-size: 60px;
+        margin-left: -2px;
+      }
+
+      a:nth-child(2) {
+        font-size: 15px;
+      }
+    }
+
+    div:nth-child(2) {
+      margin-top: 8px;
+      margin-left: 12px;
+
+      a:nth-child(1) {
+        font-size: 15px;
+        letter-spacing: 2;
+      }
+      
+      a:nth-child(3) {
+        font-size: 15px;
+      }
+    }
+
+    div:nth-child(3) {
+      a:nth-child(1) {
+        font-size: 15px;
+      }
+
+      #cart {
+        padding: 6px;
+        margin-left: 0;
+
+        span {
+          padding: 6px 6px;
+        }
+      }
+    }
+  }
+
+  .container {
+    margin-top: 50px;
+
+    .small-screens {
+      display: none;
+    }
+
+    .large-screens {
+      display: block;
+    }
+
+    .img-responsive {
+      height: 110px;
+    }
+  }
+
+  .poets-story {
+    .title {
+      font-size: 25px;
+    }
+
+    .description {
+      font-size: 13px;
+    }
+  }
+
+  .footer {
+    .instagram-image {
+      height: 25;
+    }
+
+    .instagram-link {
+      .instagram-text {
+        font-size: 16px;
+      }
+    }
+    
+    li a {
+      font-size: 12px;
+    }
+  }
+}
 
 // /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   body {
     overflow: hidden;
   }
-  
   .tempnav1 {
-    padding-top: 105px;
+    padding-top: 130px;
     width: 95%;
 
     .temphr1 {
       width: 45%;
-      border: 2px solid #fff;
+      border: 1.5px solid #fff;
     }
   }
 
   .tempnav2 {
-    padding-top: 105px;
+    padding-top: 130px;
+    z-index: 1;
     width: 95%;
 
     .temphr2 {
       width: 45%;
-      border: 2px solid #fff;
+      border: 1.5px solid #fff;
     }
   }
 
   .topnav {
+    width: 95%;
+
     .navbar-logo {
-      height: 120;
+      height: 160;
     }
 
     div {
-      padding: 0;
-      font-size: 16px;
+      font-size: 20px;
     }
     
     div:nth-child(1) {
       a:nth-child(1) {
-        font-size: 64.5px;
+        font-size: 80.5px;
         margin-left: -2px;
       }
 
       a:nth-child(2) {
-        font-size: 16px;
+        font-size: 20px;
       }
     }
 
     div:nth-child(2) {
-      margin-left: 15px;
-      margin-top: 15px;
-      flex: none;
+      margin-top: 8px;
+      margin-left: 12px;
 
       a:nth-child(1) {
-        font-size: 16px;
+        font-size: 20px;
         letter-spacing: 2;
       }
       
       a:nth-child(3) {
-        font-size: 16px;
+        font-size: 20px;
       }
     }
 
     div:nth-child(3) {
       a:nth-child(1) {
-        font-size: 16px;
+        font-size: 20px;
       }
 
       #cart {
-        padding: 5px;
-        margin-left: 10px;
+        padding: 8px;
+        margin-left: 0;
 
         span {
-          padding: 5px 5px;
+          padding: 8px 8px;
         }
       }
     }
   }
-  
-  .container {
-    margin: 140 0 0 0;
 
+  .container {
     .img-responsive {
-      height: 120px;
+      height: 150px;
     }
   }
 
   .poets-story {
     .title {
-      font-size: 24px;
+      font-size: 35px;
     }
 
     .description {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
   .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 25px;
-    color: #fff;
-    text-align: left;
-    display: flex;
-    align-items: center;
+    padding: 30px 35px;
 
     .instagram-image {
       height: 25;
     }
 
     .instagram-link {
-      display: inline-flex;
-      align-items: center;
-
       .instagram-text {
-        text-decoration: none;
-        font-size: 14px;
-        color: #fff;
-        padding: 8px 0 0 4px;
+        font-size: 16px;
       }
     }
-
-    ul {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      list-style-type: none;
-      flex-grow: 1;
-    }
-
-    li {
-      float: right;
-    }
-
+    
     li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 0 8px;
-      font-size: 14px;
-      text-decoration: none;
+      font-size: 16px;
     }
   }
 }
