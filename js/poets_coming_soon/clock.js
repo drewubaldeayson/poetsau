@@ -95,7 +95,7 @@ $(document).ready(function() {
 	$("#canvas").everyTime("1ms", function(i) {
 		var c = {
 			year : 2020,
-			month : 06,
+			month : 08,
 			day : 30,
 			hh : 00,
 			min : 00,
